@@ -1,0 +1,481 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "saving": "Enregistrement...",
+    "saved": "Enregistré",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "help": "Aide",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "signup": "Inscription",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "back": "Retour",
+    "next": "Suivant",
+    "submit": "Soumettre",
+    "close": "Fermer",
+    "soon": "Bientôt",
+    "pro": "Pro",
+    "start": "Démarrer",
+    "copy": "Copier",
+    "skip": "Passer pour l'instant",
+    "retry": "Réessayer"
+  },
+  "nav": {
+    "mainMenu": "Menu principal",
+    "dashboard": "Tableau de bord",
+    "connectors": "Sources de données",
+    "runs": "Exécutions",
+    "contexts": "Bibliothèque de contextes",
+    "dataIngestion": "Ingestion de données",
+    "organizedData": "Données organisées",
+    "metrics": "Métriques",
+    "blueprints": "Modèles",
+    "billing": "Facturation",
+    "beta": "Essais & Accès",
+    "support": "Support",
+    "admin": "Administration",
+    "agents": "Agents Locaux",
+    "settings": "Paramètres",
+    "storageUsed": "Stockage utilisé",
+    "storageAmount": "{{used}} Go sur {{total}} Go",
+    "version": "Version {{version}}"
+  },
+  "header": {
+    "searchPlaceholder": "Rechercher données, tâches, paramètres...",
+    "notifications": "Notifications"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Vue d'ensemble de votre organisation de données",
+    "recentActivity": "Activité récente",
+    "quickActions": "Actions rapides",
+    "noActivity": "Aucune activité récente"
+  },
+  "ingest": {
+    "title": "Ingestion de données",
+    "subtitle": "Téléchargez et connectez vos sources de données",
+    "dropzone": {
+      "title": "Déposez vos fichiers ici ou cliquez pour télécharger",
+      "subtitle": "Support pour CSV, JSON, Excel, PDF et plus",
+      "uploading": "Téléchargement en cours..."
+    }
+  },
+  "pricing": {
+    "title": "Tarification simple et transparente",
+    "subtitle": "Commencez gratuitement et évoluez selon vos besoins. Sans frais cachés.",
+    "free": "Gratuit",
+    "pro": "Pro",
+    "business": "Business",
+    "enterprise": "Entreprise",
+    "perMonth": "/mois",
+    "forever": "/pour toujours",
+    "currentPlan": "Plan actuel",
+    "recommended": "Recommandé",
+    "mostPopular": "Plus populaire",
+    "selectPlan": "Choisir ce plan",
+    "comingSoon": "Bientôt disponible",
+    "contactSales": "Contacter les ventes",
+    "features": {
+      "dataProcessing": "{{amount}} de traitement de données",
+      "runsPerMonth": "{{count}} exécutions par mois",
+      "unlimitedRuns": "Exécutions illimitées",
+      "connectors": "{{count}} connecteurs de données",
+      "unlimitedConnectors": "Connecteurs illimités",
+      "basicTheme": "Détection de thèmes basique",
+      "advancedAI": "Analyse IA avancée",
+      "prioritySupport": "Support prioritaire",
+      "customFormats": "Formats de sortie personnalisés",
+      "teamCollaboration": "Collaboration d'équipe",
+      "apiAccess": "Accès API",
+      "ssoAudit": "SSO et journaux d'audit",
+      "onPremise": "Déploiement sur site",
+      "dedicatedSupport": "Support dédié",
+      "slaGuarantee": "Garantie SLA"
+    }
+  },
+  "billing": {
+    "title": "Facturation et utilisation",
+    "subtitle": "Gérez votre abonnement et suivez votre utilisation",
+    "currentPlan": "Plan actuel",
+    "freeTier": "Niveau gratuit",
+    "usage": {
+      "dataScanned": "Données analysées",
+      "runs": "Exécutions",
+      "connectors": "Connecteurs",
+      "thisPeriod": "Cette période",
+      "thisMonth": "Ce mois",
+      "active": "Actif"
+    },
+    "billingHistory": "Historique de facturation",
+    "noHistory": "Aucun historique de facturation"
+  },
+  "beta": {
+    "title": "Essais & Accès",
+    "subtitle": "Entrez votre code voucher pour débloquer les fonctionnalités",
+    "activeSubtitle": "Votre accès est actif",
+    "activateVoucher": "Activer le voucher",
+    "voucherCode": "Code voucher",
+    "voucherPlaceholder": "BETA-XXXX ou EVENT-XXXX",
+    "timeRemaining": "Temps restant",
+    "activate": "Activer l'accès",
+    "activating": "Activation...",
+    "types": {
+      "event": {
+        "badge": "Démo événement",
+        "validMessage": "Voucher démo événement valide !",
+        "activatedMessage": "Démo événement activée !",
+        "title": "Vouchers démo événement",
+        "duration": "Accès 24h pour conférences et événements",
+        "feature1": "Expérience pratique avec toutes les fonctionnalités",
+        "feature2": "Parfait pour les sessions démo et ateliers"
+      },
+      "beta": {
+        "badge": "Essai bêta",
+        "validMessage": "Voucher essai bêta valide !",
+        "activatedMessage": "Essai bêta activé !",
+        "title": "Vouchers essai bêta",
+        "duration": "Période d'essai prolongée de 7-14 jours",
+        "feature1": "Accès complet pour évaluer la plateforme",
+        "feature2": "Idéal pour les entreprises découvrant Skatalyst"
+      }
+    },
+    "included": {
+      "title": "Inclus",
+      "ocr": "Accès complet à Google Cloud Vision OCR",
+      "vision": "IA de compréhension visuelle pour images",
+      "connectors": "Connecteurs entreprise (OneDrive, SharePoint)",
+      "priority": "File de traitement prioritaire"
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "step1": "Entrez votre code voucher ci-dessus",
+      "step2": "Vérifiez les fonctionnalités et la durée",
+      "step3": "Cliquez sur activer pour démarrer votre période d'accès",
+      "step4": "L'accès est débloqué immédiatement",
+      "note": "L'accès est temporaire et inclut des limites d'utilisation. Vos données et paramètres sont conservés après expiration."
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "expiryQ": "Que se passe-t-il à l'expiration de mon accès ?",
+      "expiryA": "Votre compte revient à votre plan précédent. Toutes les données sont conservées, mais les fonctionnalités premium deviennent indisponibles.",
+      "multipleQ": "Puis-je utiliser plusieurs vouchers ?",
+      "multipleA": "Vous pouvez utiliser un voucher à la fois. Attendez l'expiration de votre accès actuel avant d'en activer un nouveau.",
+      "limitsQ": "Quelles sont les limites d'utilisation ?",
+      "limitsA": "Chaque niveau a des limites spécifiques pour l'OCR, la vision et les tokens. Une fois les limites atteintes, vous pouvez toujours utiliser les fonctionnalités gratuites."
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "theme": {
+      "title": "Thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "language": {
+      "title": "Langue",
+      "select": "Sélectionner la langue"
+    },
+    "currency": {
+      "title": "Devise",
+      "select": "Sélectionner la devise"
+    }
+  },
+  "auth": {
+    "welcomeBack": "Bon retour",
+    "signInSubtitle": "Connectez-vous à votre compte SkatalystAI",
+    "createAccount": "Créer votre compte",
+    "signUpSubtitle": "Commencez gratuitement avec SkatalystAI",
+    "continueWithGoogle": "Continuer avec Google",
+    "continueWithMicrosoft": "Continuer avec Microsoft",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "signUpFree": "Inscrivez-vous gratuitement",
+    "signIn": "Connexion",
+    "accountType": "Type de compte",
+    "personal": "Personnel",
+    "company": "Entreprise",
+    "personalDesc": "Pour usage individuel",
+    "companyDesc": "Pour les équipes et organisations",
+    "companyName": "Nom de l'entreprise",
+    "companyNamePlaceholder": "Entrez le nom de votre entreprise",
+    "emailAddress": "Adresse e-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "signInWithEmail": "Se connecter avec l'e-mail",
+    "or": "ou",
+    "soon": "Bientôt",
+    "moreLoginOptions": "Plus d'options de connexion bientôt disponibles, y compris Microsoft SSO et l'authentification par e-mail/mot de passe.",
+    "moreSignupOptions": "Plus d'options d'inscription bientôt disponibles, y compris Microsoft SSO et l'inscription par e-mail/mot de passe.",
+    "agreeTerms": "En vous connectant, vous acceptez nos",
+    "agreeTermsSignup": "En vous inscrivant, vous acceptez nos",
+    "termsOfService": "Conditions d'utilisation",
+    "and": "et",
+    "privacyPolicy": "Politique de confidentialité",
+    "freeTierIncludes": "Le niveau gratuit comprend :",
+    "freeDataProcessing": "1 Go de traitement de données",
+    "freeRuns": "5 exécutions par mois",
+    "freeConnectors": "2 connecteurs de sources de données",
+    "errors": {
+      "accessDenied": "Vous avez annulé la connexion. Veuillez réessayer.",
+      "noCode": "L'authentification a échoué. Veuillez réessayer.",
+      "authFailed": "L'authentification a échoué. Veuillez réessayer.",
+      "generic": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "logout": "Déconnexion"
+  },
+  "about": {
+    "title": "À propos de SkatalystAI",
+    "subtitle": "Notre mission est d'aider les organisations à donner un sens au chaos de leurs données.",
+    "mission": {
+      "title": "Notre Mission",
+      "p1": "Chaque organisation lutte contre le chaos des données. Des fichiers dispersés sur plusieurs disques, des documents avec des noms incohérents, des informations précieuses enfouies dans des dossiers dont personne ne se souvient. Le travailleur moyen passe 2,5 heures par jour à rechercher des informations.",
+      "p2": "SkatalystAI a été conçu pour résoudre ce problème. Notre plateforme alimentée par l'IA analyse les données non structurées et les transforme en actifs organisés et structurés que les équipes peuvent réellement utiliser.",
+      "p3": "Nous croyons que l'organisation des données ne devrait pas nécessiter une équipe d'ingénieurs ou des mois de travail manuel. Avec SkatalystAI, vous pouvez passer du chaos à la clarté en quelques minutes."
+    },
+    "whatWeDo": {
+      "title": "Ce que nous faisons",
+      "ingestion": "Ingestion de données",
+      "ingestionDesc": "Connectez-vous à des dossiers locaux, téléchargez des fichiers ou intégrez le stockage cloud. Nous prenons en charge une grande variété de formats, y compris les documents, les feuilles de calcul, les images et plus encore.",
+      "analysis": "Analyse IA",
+      "analysisDesc": "Notre IA avancée analyse vos données pour détecter les thèmes, identifier les modèles et comprendre les relations. Nous utilisons des modèles de langage de pointe pour donner un sens même aux données les plus désordonnées.",
+      "output": "Sortie structurée",
+      "outputDesc": "Obtenez des structures de dossiers organisées, des schémas de base de données et des propositions exploitables. Choisissez comment vous voulez que vos données soient organisées et exportez-les dans le format qui convient le mieux à votre équipe."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "privacy": "Confidentialité d'abord",
+      "privacyDesc": "Vos données vous appartiennent. Nous traitons localement quand c'est possible et ne stockons jamais vos informations sensibles.",
+      "speed": "La vitesse compte",
+      "speedDesc": "Le temps est précieux. Nous optimisons chaque étape pour vous donner des résultats rapidement, sans sacrifier la qualité.",
+      "transparency": "Transparence",
+      "transparencyDesc": "Tarification claire, communication honnête et pas de surprises cachées. Vous savez toujours ce que vous obtenez.",
+      "userFocus": "Focus utilisateur",
+      "userFocusDesc": "Conçu pour de vraies personnes avec de vrais problèmes. Nous écoutons les retours et itérons constamment."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "subtitle": "Des questions ? Nous serions ravis de vous entendre.",
+      "contactUs": "Nous contacter",
+      "tryFree": "Essayer SkatalystAI gratuitement"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Transformez vos données désordonnées en",
+      "titleHighlight": "systèmes que vous possédez.",
+      "subtitle": "SKatalyst aide les équipes à transformer des données d'entreprise désordonnées en sources de données structurées et réutilisables — en toute sécurité, transparence et sans verrouillage fournisseur.",
+      "cta": "Commencer gratuitement",
+      "secondaryCta": "Voir comment ça marche",
+      "freeNote": "1 Go gratuit. Pas de carte de crédit. Vous choisissez où vont les sorties.",
+      "proofOwn": "Vous possédez toutes les sorties",
+      "proofDeploy": "Déployez n'importe où",
+      "proofSecure": "Nous sécurisons le processus",
+      "proofNoLock": "Pas de verrouillage"
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "subtitle": "Du chaos à la structure en trois étapes. Sans codage requis.",
+      "step1Title": "Connectez vos données",
+      "step1Desc": "Pointez SkatalystAI vers des dossiers locaux, téléchargez des fichiers ou connectez le stockage cloud. Nous analysons tout et construisons un inventaire.",
+      "step2Title": "Examinez l'analyse",
+      "step2Desc": "Notre IA détecte les thèmes, identifie les doublons et fait ressortir les relations. Examinez les résultats et ajustez si nécessaire.",
+      "step3Title": "Exportez la structure",
+      "step3Desc": "Générez des schémas SQL, des dossiers organisés, ou les deux. Téléchargez immédiatement ou déployez sur votre infrastructure."
+    },
+    "useCases": {
+      "title": "Conçu pour des problèmes réels",
+      "subtitle": "Découvrez comment différentes équipes utilisent SkatalystAI pour résoudre le chaos des données.",
+      "operationsLead": "Responsable des opérations",
+      "operationsProblem": "Nous avons 10 ans de fichiers de projet dispersés sur 5 disques.",
+      "operationsSolution": "SkatalystAI analyse toutes les sources, détecte les thèmes de projet et propose une structure unifiée avec déduplication automatique.",
+      "operationsOutcome": "Bibliothèque de projet unifiée en jours, pas en mois",
+      "dataEngineer": "Ingénieur données",
+      "dataEngineerProblem": "Notre système hérité exporte 50 formats CSV différents.",
+      "dataEngineerSolution": "SkatalystAI analyse les schémas, identifie les relations et génère des structures de base de données normalisées prêtes pour la migration.",
+      "dataEngineerOutcome": "Schémas prêts pour la base de données avec scripts de migration",
+      "complianceOfficer": "Responsable conformité",
+      "complianceProblem": "Nous devons auditer quelles données clients existent dans nos systèmes.",
+      "complianceSolution": "SkatalystAI inventorie toutes les sources de données, signale les modèles PII et génère automatiquement la documentation des flux de données.",
+      "complianceOutcome": "Inventaire complet des données pour les rapports de conformité"
+    },
+    "outputs": {
+      "title": "Ce que vous obtenez après l'analyse",
+      "subtitle": "SkatalystAI ne fait pas qu'analyser. Il produit des résultats exploitables.",
+      "schemas": "Schémas de base de données",
+      "schemasDesc": "SQL prêt pour la production avec types, relations et index appropriés.",
+      "folders": "Dossiers organisés",
+      "foldersDesc": "Hiérarchie de dossiers logique basée sur les thèmes et dates détectés.",
+      "report": "Rapport d'analyse",
+      "reportDesc": "Répartition des thèmes, scores de confiance et identification du bruit.",
+      "scripts": "Scripts de migration",
+      "scriptsDesc": "Scripts prêts à l'emploi pour l'importation dans vos systèmes.",
+      "seeReport": "Voir un exemple de rapport"
+    },
+    "trust": {
+      "title": "Vos données. Votre contrôle.",
+      "subtitle": "Nous avons conçu SkatalystAI pour les entreprises qui ne peuvent pas faire de compromis sur la sécurité des données. Voici exactement ce qui se passe avec vos données.",
+      "noStorage": "Fichiers bruts jamais stockés",
+      "noStorageDesc": "Les fichiers sont traités en mémoire et supprimés. Seules les métadonnées structurelles sont conservées pour la génération des sorties.",
+      "isolated": "Traitement isolé",
+      "isolatedDesc": "Chaque analyse s'exécute dans un conteneur dédié. Aucun accès aux données inter-locataires n'est possible.",
+      "deletion": "Suppression en un clic",
+      "deletionDesc": "Supprimez instantanément toutes vos données et votre historique d'analyse. Pas de périodes de rétention, pas de questions.",
+      "audit": "Journaux prêts pour l'audit",
+      "auditDesc": "Journaux d'activité complets pour la conformité. Sachez exactement ce qui a été traité, quand et par qui.",
+      "flowTitle": "Garantie de flux de données",
+      "flow1": "Vos fichiers téléchargés via connexion chiffrée",
+      "flow2": "Traités dans un conteneur isolé (votre locataire uniquement)",
+      "flow3": "Structure extraite, fichiers bruts supprimés",
+      "flow4": "Sorties générées et livrées à vous",
+      "flow5": "Conteneur détruit, rien n'est conservé"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Quels types de données SkatalystAI peut-il traiter ?",
+      "a1": "SkatalystAI traite les documents (PDF, Word, Excel), les données structurées (CSV, JSON, XML), les images avec texte (via OCR) et les exports de base de données. Nous prenons en charge les dossiers locaux, les téléchargements de fichiers et ajouterons bientôt les intégrations de stockage cloud.",
+      "q2": "Où vont mes données pendant le traitement ?",
+      "a2": "Vos données sont traitées dans des conteneurs isolés et éphémères. Les fichiers bruts ne sont jamais stockés sur nos serveurs. Seule l'analyse structurelle (thèmes, schémas, relations) est conservée pour générer les sorties. Vous pouvez supprimer toutes les données d'analyse à tout moment.",
+      "q3": "Quelle est la précision de la détection des thèmes ?",
+      "a3": "La précision de la détection des thèmes dépend de la qualité des données, mais atteint généralement 85-95% de précision sur les documents commerciaux bien étiquetés. Les éléments à faible confiance sont signalés pour révision manuelle, et vous pouvez toujours ajuster les catégorisations avant de finaliser.",
+      "q4": "Puis-je utiliser SkatalystAI avec mes systèmes existants ?",
+      "a4": "Oui. SkatalystAI produit des formats standard : schémas SQL, configurations JSON et structures de dossiers organisées. Ceux-ci s'intègrent directement aux bases de données existantes, aux pipelines ETL et aux systèmes de gestion de fichiers."
+    },
+    "cta": {
+      "title": "Prêt à organiser vos données sans construire une équipe ?",
+      "subtitle": "Commencez avec 1 Go gratuit. Voyez les résultats en minutes.",
+      "learnMore": "En savoir plus sur nous"
+    },
+    "ownership": {
+      "title": "Vous possédez tout. Nous le rendons possible.",
+      "subtitle": "SkatalystAI est construit autour d'un principe simple : vos données, vos systèmes, vos décisions. Nous ne revendiquons aucune propriété sur vos données, les structures que nous générons, ou les applications que nous vous aidons à déployer. Notre rôle est d'analyser, proposer, documenter et livrer — sous votre contrôle.",
+      "yourData": "Vos données",
+      "yourDataDesc": "Vous choisissez où vivent les données. Nous les analysons là où elles sont — ou vous aidons à les stocker en sécurité si vous n'avez pas encore d'infrastructure.",
+      "yourOutputs": "Vos sorties",
+      "yourOutputsDesc": "Schémas, scripts, documentation, tableaux de bord et modèles vous sont livrés comme des artefacts que vous possédez entièrement.",
+      "yourApps": "Vos applications",
+      "yourAppsDesc": "Si nous générons ou déployons des applications, elles sont hébergées où vous le souhaitez — sur votre cloud, vos serveurs, ou les nôtres temporairement.",
+      "yourDecisions": "Vos décisions",
+      "yourDecisionsDesc": "Nous intégrons votre contexte métier, vos contraintes et vos priorités dans chaque proposition avant que quoi que ce soit ne soit construit."
+    },
+    "connectors": {
+      "title": "Connectez les systèmes que vous utilisez déjà",
+      "subtitle": "Pointez SkatalystAI vers vos sources de données existantes. Nous nous occupons du reste.",
+      "scanNote": "Les scans sont d'abord uniquement des métadonnées (rapide et sûr). Les snapshots sont immuables pour des exécutions reproductibles.",
+      "available": "Disponible",
+      "comingSoon": "Bientôt disponible"
+    },
+    "security": {
+      "promiseTitle": "La promesse de sécurité SkatalystAI",
+      "promise1": "Nous ne possédons pas vos données",
+      "promise2": "Nous ne vous enfermons pas dans notre plateforme",
+      "promise3": "Nous ne déployons pas sans votre approbation",
+      "promise4": "Nous ne gardons pas ce que vous choisissez de supprimer",
+      "promiseFooter": "Nous vous aidons à transformer vos données en systèmes — puis nous prenons du recul."
+    }
+  },
+  "footer": {
+    "product": "Produit",
+    "resources": "Ressources",
+    "documentation": "Documentation",
+    "apiReference": "Référence API",
+    "company": "Entreprise",
+    "aboutUs": "À propos",
+    "contact": "Contact",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "disclaimer": "Avertissement",
+    "rights": "Tous droits réservés."
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite. Veuillez réessayer.",
+    "notFound": "Page non trouvée",
+    "unauthorized": "Vous n'êtes pas autorisé à voir cette page",
+    "networkError": "Erreur réseau. Veuillez vérifier votre connexion."
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Cliquez sur une catégorie pour voir toutes les questions",
+    "questionsCount": "{{count}} questions",
+    "categories": {
+      "cloudSecurity": {
+        "title": "OneDrive et sécurité cloud",
+        "q1": {
+          "question": "SKatalyst utilise-t-il son propre compte Microsoft pour accéder à mon OneDrive ?",
+          "answer": "Non. Absolument pas.\n\nSKatalyst ne se connecte jamais avec son propre compte Microsoft pour accéder à vos données. Vous connectez votre propre compte Microsoft via l'écran officiel de connexion et de consentement de Microsoft.\n\n• Microsoft accorde l'accès directement à vous, pas à SKatalyst\n• SKatalyst possède l'enregistrement de l'application\n• Vous possédez le compte, l'identité et les données"
+        },
+        "q2": {
+          "question": "Quelles informations d'identification SKatalyst possède-t-il réellement ?",
+          "answer": "SKatalyst possède uniquement :\n• Un identifiant d'application Azure AD (pour s'identifier auprès de Microsoft)\n• Un secret client technique (pour demander des jetons OAuth)\n\nCes informations d'identification :\n✗ Ne peuvent pas accéder à un OneDrive par elles-mêmes\n✗ Ne peuvent pas se connecter en tant qu'utilisateur\n✗ Ne peuvent pas contourner le consentement de l'utilisateur\n\nElles disent seulement : « Cette demande provient de l'application SKatalyst AI. »"
+        },
+        "q3": {
+          "question": "Quel compte Microsoft est utilisé lors de la connexion ?",
+          "answer": "Le vôtre. Toujours.\n\nLorsque vous cliquez sur « Connecter OneDrive » :\n1. Vous êtes redirigé vers Microsoft\n2. Vous vous connectez avec votre compte Microsoft\n3. Microsoft vous demande d'approuver l'accès\n4. Vous pouvez autoriser ou annuler\n\nSKatalyst ne voit jamais votre mot de passe."
+        },
+        "q4": {
+          "question": "Est-ce le même compte Microsoft que celui utilisé pour me connecter à SKatalyst ?",
+          "answer": "Cela peut l'être, mais ce n'est pas obligatoire.\n\nVous pouvez :\n• Vous connecter à SKatalyst avec un e-mail\n• Connecter OneDrive depuis un autre compte Microsoft\n\nSKatalyst affichera clairement quel compte Microsoft est connecté — en lecture seule et de manière transparente."
+        },
+        "q5": {
+          "question": "SKatalyst peut-il voir mon dossier OneDrive local sur mon ordinateur ?",
+          "answer": "Non.\n\nSKatalyst :\n• N'accède pas à votre système de fichiers local\n• Ne scanne pas les dossiers OneDrive synchronisés sur votre Mac ou Windows\n\nPour télécharger des fichiers locaux, vous devez utiliser explicitement « Fichiers locaux » dans le hub d'ingestion de données."
+        },
+        "q6": {
+          "question": "Que me demande exactement Microsoft d'approuver ?",
+          "answer": "Microsoft affiche un écran de consentement avec :\n• Le nom « SKatalyst AI »\n• Les autorisations exactes demandées (par ex. lire les fichiers que vous sélectionnez)\n• Le compte Microsoft avec lequel vous vous connectez\n\nVous pouvez :\n• Approuver\n• Annuler\n• Révoquer l'accès à tout moment depuis les paramètres de votre compte Microsoft"
+        },
+        "q7": {
+          "question": "Mon service informatique peut-il restreindre ou révoquer l'accès ?",
+          "answer": "Oui.\n\nPuisque l'accès est accordé via Microsoft OAuth :\n• Les administrateurs IT peuvent contrôler les politiques de consentement\n• Les utilisateurs ou administrateurs peuvent révoquer l'accès à tout moment\n• Les jetons expirent automatiquement\n\nSKatalyst respecte toutes les politiques de locataire Microsoft."
+        }
+      },
+      "dataPrivacy": {
+        "title": "Confidentialité et stockage des données",
+        "q1": {
+          "question": "Quand SKatalyst stocke-t-il réellement mes données ?",
+          "answer": "Uniquement après que vous ayez explicitement confirmé l'ingestion.\n\nAvant la confirmation :\n• Les fichiers sont uniquement prévisualisés\n• Les données ne sont pas persistées\n• Quitter l'espace de travail supprime les prévisualisations\n\nC'est intentionnel et requis pour la sécurité et la conformité."
+        },
+        "q2": {
+          "question": "Stockez-vous les fichiers bruts ?",
+          "answer": "Non. Nous traitons d'abord les métadonnées, puis le contenu pendant les exécutions. Les fichiers bruts ne sont pas persistés sur nos serveurs — uniquement les sorties structurées."
+        },
+        "q3": {
+          "question": "Possédons-nous les schémas et applications générés ?",
+          "answer": "Oui. Toutes les sorties (schémas, scripts, tableaux de bord, applications) sont à vous. Pas de verrouillage fournisseur. Exportez à tout moment."
+        }
+      },
+      "platform": {
+        "title": "Plateforme et déploiement",
+        "q1": {
+          "question": "Pouvez-vous déployer dans notre locataire Azure ?",
+          "answer": "Oui. Nous prenons en charge le déploiement sur votre infrastructure Azure, AWS ou GCP. Vous gardez le contrôle total de vos données et systèmes."
+        },
+        "q2": {
+          "question": "Pouvez-vous connecter SharePoint/OneDrive ?",
+          "answer": "Oui ! Le connecteur OneDrive est maintenant disponible en préversion. Le connecteur SharePoint arrive bientôt. Actuellement disponibles : dossiers locaux, téléchargement de fichiers, OneDrive et simulations de base de données."
+        },
+        "q3": {
+          "question": "Peut-on exécuter sans contexte ?",
+          "answer": "Oui. Le contexte est optionnel. Sans lui, nous utilisons l'analyse heuristique. Avec le contexte, les résultats sont plus précis et alignés sur les besoins métier."
+        },
+        "q4": {
+          "question": "Comment fonctionnent la tarification et les quotas ?",
+          "answer": "Le niveau gratuit comprend 1 Go de traitement de données, 5 exécutions/mois et 2 connecteurs. Les plans Pro et Business offrent plus de capacité. Payez uniquement ce que vous utilisez."
+        },
+        "q5": {
+          "question": "Pourquoi SKatalyst fonctionne-t-il de cette façon ?",
+          "answer": "Cette conception garantit :\n• Pas d'accès silencieux aux données\n• Des limites de propriété claires\n• Une auditabilité de niveau entreprise\n• Une gestion du consentement conforme au RGPD\n\nC'est le même modèle utilisé par des outils comme Notion, Slack et Zapier."
+        }
+      }
+    }
+  }
+}

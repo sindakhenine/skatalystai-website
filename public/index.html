@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0047AB" />
+    <meta name="description" content="SKatalyst AI - Enterprise-grade AI platform for data ingestion, organization, and application generation" />
+    <script>
+      (function (location) {
+        if (!location.search.startsWith("?/")) {
+          return;
+        }
+
+        var decoded = location.search
+          .slice(2)
+          .split("&")
+          .map(function (part) {
+            return part.replace(/~and~/g, "&");
+          })
+          .join("?");
+
+        window.history.replaceState(
+          null,
+          "",
+          location.pathname + decoded + location.hash
+        );
+      })(window.location);
+    </script>
+    <title>SKatalyst AI</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

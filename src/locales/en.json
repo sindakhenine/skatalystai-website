@@ -1,0 +1,1266 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "help": "Help",
+    "settings": "Settings",
+    "logout": "Log out",
+    "login": "Sign in",
+    "signup": "Sign up",
+    "getStarted": "Get Started",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "soon": "Soon",
+    "pro": "Pro",
+    "start": "Start",
+    "copy": "Copy to clipboard",
+    "skip": "Skip for now",
+    "retry": "Retry",
+    "done": "Done",
+    "exporting": "Exporting..."
+  },
+  "workspace": {
+    "settings": "Workspace settings",
+    "createNew": "Create new workspace",
+    "settingsTitle": "Workspace Settings",
+    "settingsSubtitle": "Manage your workspace settings and team members",
+    "generalInfo": "General Information",
+    "generalInfoDesc": "Basic information about your workspace",
+    "name": "Workspace name",
+    "type": "Type",
+    "teamMembers": "Team Members",
+    "teamMembersDesc": "People who have access to this workspace",
+    "removeMember": "Remove member",
+    "confirmRemove": "Are you sure you want to remove {{name}} from this workspace?",
+    "invitePlaceholder": "Enter email to invite",
+    "invite": "Invite",
+    "inviting": "Inviting...",
+    "dangerZone": "Danger Zone",
+    "dangerZoneDesc": "Irreversible and destructive actions",
+    "deleteWorkspace": "Delete this workspace",
+    "deleteWorkspaceDesc": "Once deleted, all data in this workspace will be permanently removed."
+  },
+  "nav": {
+    "mainMenu": "Main Menu",
+    "dashboard": "Dashboard",
+    "connectors": "Data Sources",
+    "runs": "Runs",
+    "contexts": "Context Library",
+    "dataIngestion": "Data Ingestion",
+    "organizedData": "Organized Data",
+    "outputTargets": "Output Targets",
+    "metrics": "Metrics",
+    "blueprints": "Blueprints",
+    "billing": "Billing",
+    "beta": "Trials & Access",
+    "support": "Support",
+    "admin": "Admin",
+    "agents": "Local Agents",
+    "settings": "Settings",
+    "storageUsed": "Storage Used",
+    "storageAmount": "{{used}} GB of {{total}} GB",
+    "version": "Version {{version}}"
+  },
+  "header": {
+    "searchPlaceholder": "Search data, jobs, settings...",
+    "notifications": "Notifications"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Welcome back! Here's an overview of your workspace.",
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "noActivity": "No recent activity",
+    "stats": {
+      "sources": "Data Sources",
+      "files": "Total Files",
+      "jobs": "Completed Jobs",
+      "storage": "Storage Used"
+    }
+  },
+  "organized": {
+    "subtitle": "View and manage your organized document collections.",
+    "recentJobs": "Recent Completed Jobs",
+    "filesProcessed": "files processed"
+  },
+  "ingest": {
+    "title": "Data Ingestion",
+    "subtitle": "Upload your documents and let AI organize them automatically.",
+    "dropzone": {
+      "title": "Drop files here or click to upload",
+      "subtitle": "Support for CSV, JSON, Excel, PDF, and more",
+      "uploading": "Uploading files..."
+    },
+    "steps": {
+      "upload": "Upload",
+      "processing": "Processing",
+      "results": "Results"
+    }
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Start free and scale as you grow. No hidden fees, no surprises.",
+    "free": "Free",
+    "pro": "Pro",
+    "business": "Business",
+    "enterprise": "Enterprise",
+    "perMonth": "/month",
+    "forever": "/forever",
+    "currentPlan": "Current Plan",
+    "recommended": "Recommended",
+    "mostPopular": "Most Popular",
+    "selectPlan": "Select Plan",
+    "comingSoon": "Coming Soon",
+    "contactSales": "Contact Sales",
+    "features": {
+      "dataProcessing": "{{amount}} data processing",
+      "runsPerMonth": "{{count}} runs per month",
+      "unlimitedRuns": "Unlimited runs",
+      "connectors": "{{count}} data source connectors",
+      "unlimitedConnectors": "Unlimited connectors",
+      "basicTheme": "Basic theme detection",
+      "advancedAI": "Advanced AI analysis",
+      "prioritySupport": "Priority support",
+      "customFormats": "Custom output formats",
+      "teamCollaboration": "Team collaboration",
+      "apiAccess": "API access",
+      "ssoAudit": "SSO & audit logs",
+      "onPremise": "On-premise deployment",
+      "dedicatedSupport": "Dedicated support",
+      "slaGuarantee": "SLA guarantee"
+    }
+  },
+  "billing": {
+    "title": "Billing & Usage",
+    "subtitle": "Manage your subscription and monitor your usage",
+    "currentPlan": "Current Plan",
+    "freeTier": "Free Tier",
+    "youreOn": "You're on the",
+    "plan": "plan",
+    "resetInfo": "Usage resets on the 1st of each month.",
+    "usage": {
+      "dataScanned": "Data Scanned",
+      "runs": "Runs",
+      "connectors": "Connectors",
+      "thisPeriod": "This period",
+      "thisMonth": "This month",
+      "active": "Active"
+    },
+    "billingHistory": "Billing History",
+    "noHistory": "No billing history yet",
+    "upcomingInvoice": {
+      "title": "Upcoming Invoice",
+      "noInvoice": "No upcoming invoice",
+      "subtotal": "Subtotal",
+      "total": "Total",
+      "dueDate": "Due date",
+      "periodEnd": "Billing period ends",
+      "baseSubscription": "Base subscription",
+      "meteredUsage": "Metered usage"
+    },
+    "paymentStatus": {
+      "active": "Payment current",
+      "pastDue": "Payment past due",
+      "gracePeriod": "Grace period active",
+      "hardBlocked": "Account suspended",
+      "gracePeriodWarning": "Your payment failed. You have {{days}} day(s) to update your payment method.",
+      "gracePeriodExpired": "Your grace period has expired. Please update your payment method to restore access.",
+      "updatePaymentMethod": "Update Payment Method"
+    },
+    "metered": {
+      "gbScanned": "GB scanned",
+      "ocrPages": "OCR pages processed",
+      "videoMinutes": "Video minutes analyzed"
+    }
+  },
+  "beta": {
+    "title": "Trials & Access",
+    "subtitle": "Enter your voucher code to unlock features",
+    "activeSubtitle": "Your access is active",
+    "activateVoucher": "Activate Voucher",
+    "voucherCode": "Voucher Code",
+    "voucherPlaceholder": "BETA-XXXX or EVENT-XXXX",
+    "timeRemaining": "Time Remaining",
+    "activate": "Activate Access",
+    "activating": "Activating...",
+    "types": {
+      "event": {
+        "badge": "Event Demo",
+        "validMessage": "Valid event demo voucher!",
+        "activatedMessage": "Event demo activated!",
+        "title": "Event Demo Vouchers",
+        "duration": "24-hour access for conferences & events",
+        "feature1": "Quick hands-on experience with all features",
+        "feature2": "Perfect for demo sessions & workshops"
+      },
+      "beta": {
+        "badge": "Beta Trial",
+        "validMessage": "Valid beta trial voucher!",
+        "activatedMessage": "Beta trial activated!",
+        "title": "Beta Trial Vouchers",
+        "duration": "7-14 day extended trial period",
+        "feature1": "Full access to evaluate the platform",
+        "feature2": "Ideal for companies exploring Skatalyst"
+      }
+    },
+    "included": {
+      "title": "What's included?",
+      "ocr": "Full access to Google Cloud Vision OCR",
+      "vision": "Visual Understanding AI for images",
+      "connectors": "Enterprise connectors (OneDrive, SharePoint)",
+      "priority": "Priority processing queue"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1": "Enter your voucher code above",
+      "step2": "Review the features and duration",
+      "step3": "Click activate to start your access period",
+      "step4": "Access unlocks immediately",
+      "note": "Access is temporary and includes usage limits. Your data and settings remain after expiry."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "expiryQ": "What happens when my access expires?",
+      "expiryA": "Your account reverts to your previous plan. All data is preserved, but premium features become unavailable.",
+      "multipleQ": "Can I use multiple vouchers?",
+      "multipleA": "You can redeem one voucher at a time. Wait for your current access to expire before activating a new one.",
+      "limitsQ": "What are the usage limits?",
+      "limitsA": "Each tier has specific limits for OCR, vision, and token usage. When limits are reached, you can still use free features."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account, preferences, and integrations",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "title": "Language",
+      "select": "Select language"
+    },
+    "currency": {
+      "title": "Currency",
+      "select": "Select currency"
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Your personal information and account details",
+      "name": "Full name",
+      "email": "Email address",
+      "emailNote": "Email cannot be changed. Contact support if needed.",
+      "changeAvatar": "Change avatar",
+      "avatarHint": "JPG, PNG or GIF. Max 5MB.",
+      "invalidImageType": "Please select an image file (JPG, PNG, or GIF)",
+      "imageTooLarge": "Image is too large. Maximum size is 5MB."
+    },
+    "apiKeys": {
+      "title": "API Keys",
+      "description": "Manage API keys for programmatic access",
+      "noKeys": "No API keys created yet",
+      "namePlaceholder": "Key name (e.g., Production)",
+      "create": "Create Key",
+      "created": "Created",
+      "show": "Show key",
+      "hide": "Hide key",
+      "revoke": "Revoke key",
+      "warning": "Keep your API keys secure. Never share them publicly or commit them to version control."
+    },
+    "byok": {
+      "title": "LLM API Keys",
+      "description": "Bring your own API keys for AI-powered features",
+      "warningTitle": "You control your API costs",
+      "warningText": "API calls using your keys are billed directly by the provider (Anthropic, OpenAI, or Google). SKatalyst does not control, manage, or subsidize these costs. Monitor your usage in your provider's dashboard.",
+      "costBanner": "All LLM usage is billed directly to your provider accounts. SKatalyst is not responsible for API charges incurred through your keys.",
+      "notConfigured": "Not configured",
+      "requiredTitle": "LLM API Key Required",
+      "requiredMessage": "This feature requires an LLM API key. Add your API key in Settings to enable AI-powered analysis.",
+      "requiredAction": "Configure API Keys",
+      "noKeysConfigured": "No LLM API keys configured",
+      "noKeysMessage": "To use AI-powered features like intelligent classification and content analysis, you need to add at least one LLM API key.",
+      "addKey": "Add Key",
+      "rotate": "Rotate",
+      "delete": "Delete",
+      "apiKey": "API Key",
+      "getKey": "Get your API key from",
+      "testKey": "Test Key",
+      "testSuccess": "API key is valid!",
+      "saveKey": "Save Key",
+      "rotateKey": "Rotate Key",
+      "confirmDelete": "Are you sure you want to delete the {{provider}} API key? This action cannot be undone.",
+      "lastUsed": "Last used",
+      "defaultProvider": "Default Provider",
+      "selectDefault": "Select default provider",
+      "defaultProviderHelp": "This provider will be used for AI features when no specific provider is selected."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "description": "Configure how long your data is stored",
+      "keepRuns": "Keep run history",
+      "keepReports": "Keep reports",
+      "autoDelete": "Automatically delete expired data",
+      "days": "{{count}} days",
+      "forever": "Forever"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Choose what updates you want to receive",
+      "runComplete": "Email me when a run completes",
+      "weeklySummary": "Send weekly usage summary",
+      "productUpdates": "Product updates and announcements",
+      "browser": "Enable browser notifications"
+    },
+    "dangerZone": {
+      "title": "Danger Zone",
+      "description": "Irreversible and destructive actions"
+    },
+    "deleteAccount": {
+      "title": "Delete Account",
+      "description": "Permanently delete your account and all data",
+      "button": "Delete Account",
+      "warning": "This action cannot be undone. All your data, runs, and settings will be permanently deleted.",
+      "confirmLabel": "Type DELETE to confirm",
+      "confirm": "Delete My Account",
+      "deleting": "Deleting..."
+    }
+  },
+  "auth": {
+    "welcomeBack": "Welcome back",
+    "signInSubtitle": "Sign in to your SkatalystAI account",
+    "createAccount": "Create your account",
+    "signUpSubtitle": "Get started with SkatalystAI for free",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithMicrosoft": "Continue with Microsoft",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUpFree": "Sign up for free",
+    "signIn": "Sign in",
+    "accountType": "Account type",
+    "personal": "Personal",
+    "company": "Company",
+    "personalDesc": "For individual use",
+    "companyDesc": "For teams and organizations",
+    "companyName": "Company name",
+    "companyNamePlaceholder": "Enter your company name",
+    "emailAddress": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "signInWithEmail": "Sign in with email",
+    "or": "or",
+    "soon": "Soon",
+    "moreLoginOptions": "More login options coming soon, including Microsoft SSO and email/password authentication.",
+    "moreSignupOptions": "More signup options coming soon, including Microsoft SSO and email/password registration.",
+    "agreeTerms": "By signing in, you agree to our",
+    "agreeTermsSignup": "By signing up, you agree to our",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "freeTierIncludes": "Free tier includes:",
+    "freeDataProcessing": "1 GB data processing",
+    "freeRuns": "5 runs per month",
+    "freeConnectors": "2 data source connectors",
+    "rememberMe": "Remember me for 30 days",
+    "sessionExpired": "Your session has expired. Please sign in again.",
+    "sessionExpiring": "Your session will expire soon.",
+    "staySignedIn": "Stay signed in",
+    "verification": {
+      "title": "Verify your email",
+      "subtitle": "We sent a verification link to {{email}}",
+      "checkInbox": "Check your inbox and click the verification link to continue.",
+      "resend": "Resend verification email",
+      "resending": "Sending...",
+      "resent": "Verification email sent!",
+      "didntReceive": "Didn't receive the email?",
+      "checkSpam": "Check your spam folder or click below to resend."
+    },
+    "onboarding": {
+      "welcome": "Welcome to SkatalystAI!",
+      "letsGetStarted": "Let's get you set up in just a few steps.",
+      "step1Title": "Set up your workspace",
+      "step1Desc": "Your workspace is where all your data and projects live.",
+      "workspaceName": "Workspace name",
+      "workspaceNamePlaceholder": "My Workspace",
+      "step2Title": "What will you use SkatalystAI for?",
+      "step2Desc": "This helps us customize your experience.",
+      "useCase": {
+        "dataOrganization": "Organize messy data",
+        "dataOrganizationDesc": "Clean up scattered files and folders",
+        "schemaMigration": "Database migrations",
+        "schemaMigrationDesc": "Generate schemas from legacy data",
+        "compliance": "Compliance & audits",
+        "complianceDesc": "Inventory and document data flows",
+        "other": "Something else",
+        "otherDesc": "I'll explore on my own"
+      },
+      "step3Title": "Connect your first data source",
+      "step3Desc": "To get started, you'll need to connect a data source. This is where SkatalystAI will analyze your files.",
+      "nextSteps": "What happens next:",
+      "nextStep1": "Connect a local folder, upload files, or link cloud storage",
+      "nextStep2": "SkatalystAI scans and analyzes your data",
+      "nextStep3": "Get organized structures, schemas, and insights",
+      "skipForNow": "Skip for now",
+      "finish": "Finish setup",
+      "connectSource": "Connect Data Source",
+      "allDone": "You're all set!",
+      "startExploring": "Start exploring your dashboard."
+    },
+    "errors": {
+      "accessDenied": "You cancelled the login. Please try again.",
+      "noCode": "Authentication failed. Please try again.",
+      "authFailed": "Authentication failed. Please try again.",
+      "generic": "An error occurred. Please try again."
+    },
+    "logout": "Logout"
+  },
+  "onboarding": {
+    "banner": {
+      "title": "Get started with SkatalystAI",
+      "description": "Connect your first data source to start organizing your files.",
+      "connectCta": "Connect Data Source"
+    }
+  },
+  "emptyState": {
+    "dashboard": {
+      "title": "No data yet",
+      "description": "Connect a data source to start analyzing and organizing your files. SkatalystAI will help you make sense of your data.",
+      "action": "Connect Data Source"
+    },
+    "connectors": {
+      "title": "No data sources connected",
+      "description": "Add a data source to start scanning your files. You can connect local folders, upload files, or link cloud storage.",
+      "action": "Add Your First Source"
+    },
+    "ingest": {
+      "title": "Data ingestion not available",
+      "description": "You need to connect at least one data source before you can run ingestion.",
+      "action": "Go to Data Sources",
+      "lockedReason": "Connect a data source first to unlock this feature."
+    },
+    "metrics": {
+      "title": "No metrics yet",
+      "description": "Metrics will appear here after you run your first analysis. Connect a data source and start a run to see insights."
+    },
+    "blueprints": {
+      "title": "No blueprints generated",
+      "description": "Blueprints are generated after analysis. They include database schemas, folder structures, and migration scripts."
+    },
+    "organized": {
+      "title": "No organized data yet",
+      "description": "After running an analysis, your organized data structures will appear here. You'll be able to preview and export them."
+    },
+    "contexts": {
+      "title": "No contexts saved",
+      "description": "Save context templates to reuse them across runs. Contexts help SkatalystAI better understand your data.",
+      "action": "Create First Context"
+    },
+    "analysisPreview": "Run your first analysis to populate this section",
+    "unlockNow": "Unlock this feature"
+  },
+  "about": {
+    "title": "About SkatalystAI",
+    "subtitle": "We're on a mission to help organizations make sense of their data chaos.",
+    "mission": {
+      "title": "Our Mission",
+      "p1": "Every organization struggles with data chaos. Files scattered across drives, documents with inconsistent naming, valuable information buried in folders that no one remembers creating. The average knowledge worker spends 2.5 hours a day searching for information.",
+      "p2": "SkatalystAI was built to solve this problem. Our AI-powered platform analyzes unstructured data and transforms it into organized, structured assets that teams can actually use.",
+      "p3": "We believe that data organization shouldn't require a team of engineers or months of manual work. With SkatalystAI, you can go from chaos to clarity in minutes."
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "ingestion": "Data Ingestion",
+      "ingestionDesc": "Connect to local folders, upload files, or integrate with cloud storage. We support a wide variety of formats including documents, spreadsheets, images, and more.",
+      "analysis": "AI Analysis",
+      "analysisDesc": "Our advanced AI analyzes your data to detect themes, identify patterns, and understand relationships. We use state-of-the-art language models to make sense of even the messiest data.",
+      "output": "Structured Output",
+      "outputDesc": "Get organized folder structures, database schemas, and actionable proposals. Choose how you want your data organized and export it in the format that works best for your team."
+    },
+    "values": {
+      "title": "Our Values",
+      "privacy": "Privacy First",
+      "privacyDesc": "Your data is yours. We process locally when possible and never store your sensitive information.",
+      "speed": "Speed Matters",
+      "speedDesc": "Time is valuable. We optimize every step to give you results fast, without sacrificing quality.",
+      "transparency": "Transparency",
+      "transparencyDesc": "Clear pricing, honest communication, and no hidden surprises. You always know what you're getting.",
+      "userFocus": "User Focus",
+      "userFocusDesc": "Built for real people with real problems. We listen to feedback and iterate constantly."
+    },
+    "contact": {
+      "title": "Get in touch",
+      "subtitle": "Have questions? We'd love to hear from you.",
+      "contactUs": "Contact Us",
+      "tryFree": "Try SkatalystAI Free"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Transform messy data into",
+      "titleHighlight": "owned systems.",
+      "subtitle": "SKatalyst helps teams turn messy enterprise data into structured, reusable data sources — safely, transparently, and without vendor lock-in.",
+      "cta": "Start organizing free",
+      "secondaryCta": "See how it works",
+      "freeNote": "1GB free. No credit card. You choose where outputs live.",
+      "proofOwn": "You own all outputs",
+      "proofDeploy": "Deploy anywhere",
+      "proofSecure": "We secure the process",
+      "proofNoLock": "No lock-in"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "From chaos to structure in three steps. No coding required.",
+      "step1Title": "Connect your data",
+      "step1Desc": "Point SkatalystAI at local folders, upload files, or connect cloud storage. We scan everything and build an inventory.",
+      "step2Title": "Review analysis",
+      "step2Desc": "Our AI detects themes, identifies duplicates, and surfaces relationships. Review the findings and adjust if needed.",
+      "step3Title": "Export structure",
+      "step3Desc": "Generate SQL schemas, organized folders, or both. Download immediately or deploy to your infrastructure."
+    },
+    "useCases": {
+      "title": "Built for real problems",
+      "subtitle": "See how different teams use SkatalystAI to solve data chaos.",
+      "operationsLead": "Operations Lead",
+      "operationsProblem": "We have 10 years of project files scattered across 5 drives.",
+      "operationsSolution": "SkatalystAI scans all sources, detects project themes, and proposes a unified structure with automatic deduplication.",
+      "operationsOutcome": "Unified project library in days, not months",
+      "dataEngineer": "Data Engineer",
+      "dataEngineerProblem": "Our legacy system exports 50 different CSV formats.",
+      "dataEngineerSolution": "SkatalystAI analyzes schemas, identifies relationships, and generates normalized database structures ready for migration.",
+      "dataEngineerOutcome": "Database-ready schemas with migration scripts",
+      "complianceOfficer": "Compliance Officer",
+      "complianceProblem": "We need to audit what customer data exists across our systems.",
+      "complianceSolution": "SkatalystAI inventories all data sources, flags PII patterns, and generates data flow documentation automatically.",
+      "complianceOutcome": "Complete data inventory for compliance reporting"
+    },
+    "outputs": {
+      "title": "What you get after analysis",
+      "subtitle": "SkatalystAI doesn't just analyze. It produces actionable outputs.",
+      "schemas": "Database schemas",
+      "schemasDesc": "Production-ready SQL with proper types, relationships, and indexes.",
+      "folders": "Organized folders",
+      "foldersDesc": "Logical folder hierarchy based on detected themes and dates.",
+      "report": "Analysis report",
+      "reportDesc": "Theme breakdown, confidence scores, and noise identification.",
+      "scripts": "Migration scripts",
+      "scriptsDesc": "Ready-to-run scripts for importing into your systems.",
+      "seeReport": "See a sample report"
+    },
+    "trust": {
+      "title": "Your data. Your control.",
+      "subtitle": "We built SkatalystAI for enterprises that can't compromise on data security. Here's exactly what happens with your data.",
+      "noStorage": "Raw files never stored",
+      "noStorageDesc": "Files are processed in memory and discarded. Only structural metadata is retained for output generation.",
+      "isolated": "Isolated processing",
+      "isolatedDesc": "Each analysis runs in a dedicated container. No cross-tenant data access is possible.",
+      "deletion": "One-click deletion",
+      "deletionDesc": "Delete all your data and analysis history instantly. No retention periods, no questions.",
+      "audit": "Audit-ready logs",
+      "auditDesc": "Full activity logs for compliance. Know exactly what was processed, when, and by whom.",
+      "flowTitle": "Data flow guarantee",
+      "flow1": "Your files uploaded via encrypted connection",
+      "flow2": "Processed in isolated container (your tenant only)",
+      "flow3": "Structure extracted, raw files discarded",
+      "flow4": "Outputs generated and delivered to you",
+      "flow5": "Container destroyed, nothing retained"
+    },
+    "faq": {
+      "title": "Common questions",
+      "q1": "What types of data can SkatalystAI process?",
+      "a1": "SkatalystAI processes documents (PDF, Word, Excel), structured data (CSV, JSON, XML), images with text (via OCR), and database exports. We support local folders, file uploads, and will soon add cloud storage integrations.",
+      "q2": "Where does my data go during processing?",
+      "a2": "Your data is processed in isolated, ephemeral containers. Raw files are never stored on our servers. Only the structural analysis (themes, schemas, relationships) is retained to generate outputs. You can delete all analysis data at any time.",
+      "q3": "How accurate is the theme detection?",
+      "a3": "Theme detection accuracy depends on data quality, but typically achieves 85-95% accuracy on well-labeled business documents. Low-confidence items are flagged for manual review, and you can always adjust categorizations before finalizing.",
+      "q4": "Can I use SkatalystAI with my existing systems?",
+      "a4": "Yes. SkatalystAI outputs standard formats: SQL schemas, JSON configurations, and organized folder structures. These integrate directly with existing databases, ETL pipelines, and file management systems."
+    },
+    "cta": {
+      "title": "Ready to organize your data without building a team?",
+      "subtitle": "Start with 1GB free. See results in minutes.",
+      "learnMore": "Learn more about us"
+    },
+    "ownership": {
+      "title": "You own everything. We enable it.",
+      "subtitle": "SkatalystAI is built around a simple principle: your data, your systems, your decisions. We do not claim ownership over your data, the structures we generate, or the applications we help you deploy. Our role is to analyze, propose, document, and deliver — under your control.",
+      "yourData": "Your data",
+      "yourDataDesc": "You choose where data lives. We analyze it where it is — or help you store it securely if you don't have infrastructure yet.",
+      "yourOutputs": "Your outputs",
+      "yourOutputsDesc": "Schemas, scripts, documentation, dashboards, and models are delivered to you as artifacts you fully own.",
+      "yourApps": "Your applications",
+      "yourAppsDesc": "If we generate or deploy applications, they are hosted where you choose — on your cloud, your servers, or ours temporarily.",
+      "yourDecisions": "Your decisions",
+      "yourDecisionsDesc": "We incorporate your business context, constraints, and priorities into every proposal before anything is built."
+    },
+    "connectors": {
+      "title": "Connect the systems you already run",
+      "subtitle": "Point SkatalystAI at your existing data sources. We handle the rest.",
+      "scanNote": "Scans are metadata-only first (fast & safe). Snapshots are immutable for reproducible runs.",
+      "available": "Available",
+      "comingSoon": "Coming soon"
+    },
+    "security": {
+      "promiseTitle": "The SkatalystAI Security Promise",
+      "promise1": "We do not own your data",
+      "promise2": "We do not lock you into our platform",
+      "promise3": "We do not deploy without your approval",
+      "promise4": "We do not keep what you choose to delete",
+      "promiseFooter": "We help you turn data into systems — and then step back."
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "apiReference": "API Reference",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "rights": "All rights reserved."
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "You are not authorized to view this page",
+    "networkError": "Network error. Please check your connection."
+  },
+  "paywall": {
+    "gbTitle": "Storage limit reached",
+    "gbDescription": "You've used all of your data processing quota in your free tier.",
+    "runsTitle": "Run limit reached",
+    "runsDescription": "You've used all runs available in your free tier this month.",
+    "connectorsTitle": "Connector limit reached",
+    "connectorsDescription": "You've used all data source connectors in your free tier.",
+    "genericTitle": "Free tier limit reached",
+    "genericDescription": "You've reached the limits of your free tier.",
+    "currentUsage": "Current usage",
+    "of": "of",
+    "runs": "runs",
+    "connectors": "connectors",
+    "proFeature1": "25 GB data processing",
+    "proFeature2": "50 runs per month",
+    "proFeature3": "10 data connectors",
+    "businessFeature1": "100 GB data processing",
+    "businessFeature2": "Unlimited runs",
+    "businessFeature3": "Unlimited connectors",
+    "upgradeNow": "Upgrade Now",
+    "maybeLater": "Maybe later",
+    "resetInfo": "Free tier limits reset at the start of each billing cycle."
+  },
+  "connector": {
+    "wizardTitle": "Add Data Source",
+    "steps": {
+      "chooseType": "Source Type",
+      "configure": "Configure",
+      "test": "Test",
+      "save": "Save"
+    },
+    "types": {
+      "local_server_agent": {
+        "title": "Local Server Agent",
+        "description": "Install an agent on your server to scan and sync folders automatically"
+      },
+      "database": {
+        "title": "Database",
+        "description": "Connect to SQL or NoSQL databases"
+      },
+      "cloud_storage": {
+        "title": "Cloud Storage",
+        "description": "Connect to S3, Azure Blob, or Google Cloud Storage"
+      }
+    },
+    "step1": {
+      "title": "Choose your data source",
+      "subtitle": "Select the type of data source you want to connect"
+    },
+    "step2": {
+      "title": "Configure connection",
+      "subtitle": "Enter the details for your data source"
+    },
+    "step3": {
+      "title": "Test connection",
+      "subtitle": "Verify that we can access your data source",
+      "connectionInfo": "Connection details",
+      "type": "Type",
+      "filesSelected": "files selected",
+      "testConnection": "Test Connection",
+      "testing": "Testing...",
+      "testSuccess": "Connection successful!",
+      "testFailed": "Connection failed",
+      "filesFound": "files found",
+      "totalSize": "Total size",
+      "sampleFiles": "Sample files:"
+    },
+    "step4": {
+      "title": "Save connector",
+      "subtitle": "Give your connector a name and save it",
+      "connectorName": "Connector name",
+      "namePlaceholder": "e.g., Project Documents",
+      "summary": "Summary",
+      "saveConnector": "Save Connector"
+    },
+    "config": {
+      "folderPath": "Folder path",
+      "folderPathHint": "Enter the full path to the folder you want to connect",
+      "filePatterns": "File patterns (optional)",
+      "filePatternsHint": "Leave empty to include all files, or specify patterns like *.pdf, *.docx",
+      "includeSubfolders": "Include subfolders",
+      "dropFiles": "Drop files here or click to upload",
+      "supportedFormats": "PDF, Word, Excel, CSV, JSON, and more",
+      "selectedFiles": "{{count}} files selected",
+      "files": "Files",
+      "comingSoon": "Configuration for this connector type coming soon"
+    },
+    "test": {
+      "filesReady": "Files are ready for upload",
+      "failed": "Could not connect to the data source",
+      "error": "An error occurred while testing the connection"
+    },
+    "save": {
+      "failed": "Failed to save connector",
+      "error": "An error occurred while saving"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "error": "Error",
+      "syncing": "Syncing"
+    },
+    "actions": {
+      "refresh": "Refresh",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "files": "files",
+    "lastScan": "Last scan",
+    "listTitle": "Connected Sources",
+    "listSubtitle": "{{count}} data sources connected",
+    "addAnother": "Add Source",
+    "addFirst": "Add Your First Source",
+    "empty": {
+      "title": "No data sources yet",
+      "description": "Connect your first data source to start organizing your data"
+    },
+    "fetchError": "Failed to load connectors",
+    "deleteConfirm": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone."
+  },
+  "context": {
+    "libraryTitle": "Context Library",
+    "librarySubtitle": "{{count}} saved contexts",
+    "addNew": "New Context",
+    "addFirst": "Create Your First Context",
+    "default": "Default",
+    "setDefault": "Set as default",
+    "edit": "Edit",
+    "delete": "Delete",
+    "editContext": "Edit Context",
+    "newContext": "New Context",
+    "name": "Name",
+    "namePlaceholder": "e.g., Invoice Processing",
+    "description": "Description (optional)",
+    "descriptionPlaceholder": "Brief description of when to use this context",
+    "contextText": "Context Instructions",
+    "contextTextPlaceholder": "Enter the context or instructions that will guide the AI analysis...",
+    "contextTextHint": "This text will be used to guide how your data is analyzed and organized.",
+    "setAsDefault": "Set as default context",
+    "fetchError": "Failed to load contexts",
+    "deleteConfirm": "Are you sure you want to delete \"{{name}}\"?",
+    "empty": {
+      "title": "No saved contexts yet",
+      "description": "Create reusable context templates to speed up your workflow"
+    },
+    "selector": {
+      "placeholder": "Select or enter context",
+      "noContext": "No context",
+      "noContextDesc": "Let AI detect themes automatically",
+      "enterNew": "Enter new context",
+      "enterNewDesc": "Type custom instructions for this run",
+      "useSaved": "Use saved context",
+      "useSavedDesc": "Select from your context library",
+      "multipleContexts": "Multiple contexts",
+      "multipleContextsDesc": "Run with multiple contexts for comparison",
+      "proFeature": "Pro",
+      "newContext": "New context",
+      "selectSaved": "Select a saved context",
+      "selectMultiple": "Select multiple contexts",
+      "multipleSelected": "{{count}} contexts selected",
+      "contextPlaceholder": "Enter your context or instructions...",
+      "noSavedContexts": "No saved contexts. Create one in the Context Library."
+    },
+    "source": {
+      "library": "Library Context",
+      "custom": "Custom Context",
+      "auto": "Auto-Inferred Context",
+      "none": "No Context"
+    },
+    "immutability": {
+      "frozen": "Context is frozen",
+      "frozenAt": "Frozen at {{time}}",
+      "cannotModify": "Context cannot be modified after run starts"
+    },
+    "diff": {
+      "title": "Context Changes",
+      "identical": "Context is identical to previous run",
+      "changed": "Context has changed",
+      "sourceChanged": "Source changed from {{previous}} to {{current}}",
+      "contentChanged": "Content was modified",
+      "contextAdded": "Context was added",
+      "contextRemoved": "Context was removed"
+    },
+    "disclaimer": {
+      "short": "AI-generated analysis. Results may contain errors.",
+      "medium": "This analysis was generated using AI and the provided context. Results are estimates and should be reviewed before use.",
+      "full": "Analysis is AI-generated using provided context. Theme detection, categorization, and suggestions are probabilistic estimates. Review and validate all outputs before production use."
+    }
+  },
+  "rerun": {
+    "title": "Run Again",
+    "previousRun": "Previous run",
+    "previousContext": "Previous context used:",
+    "selectContext": "Select context for this run",
+    "contextPlaceholder": "Choose how to run",
+    "info": "This will create a new run with your selected settings. The original run will remain unchanged.",
+    "runAgain": "Run Again",
+    "quickRerun": "Quick re-run",
+    "quickRerunDesc": "Use the same context as before",
+    "withContext": "Run with context",
+    "withContextDesc": "Select or enter a new context",
+    "noContext": "Run without context",
+    "noContextDesc": "Let AI detect themes automatically",
+    "startRun": "Start Run",
+    "running": "Starting..."
+  },
+  "report": {
+    "title": "Run Report",
+    "notFound": "Run not found",
+    "completedOn": "Analysis completed on {{date}}",
+    "exportReport": "Export Report",
+    "exportPilot": "Export Pilot Package",
+    "exportFailed": "Failed to export pilot package: ",
+    "stats": {
+      "filesProcessed": "Files Processed",
+      "dataSize": "Data Size",
+      "categoriesDetected": "Categories Detected",
+      "processingCost": "Processing Cost"
+    },
+    "confidence": {
+      "high": "High confidence",
+      "medium": "Medium confidence",
+      "low": "Low confidence"
+    },
+    "chart": {
+      "title": "Theme Distribution",
+      "andMore": "+{{count}} more categories"
+    },
+    "themes": {
+      "title": "Theme Detection",
+      "description": "Auto-detected categories from your data",
+      "summary": "{{files}} files across {{categories}} categories",
+      "files": "files",
+      "samples": "Sample files:"
+    },
+    "noise": {
+      "title": "Noise Summary",
+      "description": "Potential issues found in your data",
+      "duplicates": "Duplicates",
+      "duplicatesDesc": "files detected",
+      "lowConfidence": "Low Confidence",
+      "lowConfidenceDesc": "need review",
+      "emptyFiles": "Empty Files",
+      "emptyFilesDesc": "can be removed",
+      "corrupted": "Corrupted",
+      "corruptedDesc": "unreadable",
+      "reviewDuplicates": "Review Duplicates",
+      "reviewLowConfidence": "Review Low Confidence",
+      "reviewQueue": "Review Queue",
+      "reviewQueueDesc": "Files that need manual review",
+      "approve": "Approve",
+      "reject": "Reject",
+      "viewAll": "View all {{count}} items"
+    },
+    "proposals": {
+      "title": "Structure Proposals",
+      "sql": {
+        "title": "SQL Schema",
+        "description": "Database structure based on detected themes"
+      },
+      "folder": {
+        "title": "Folder Structure",
+        "description": "Organized file layout proposal"
+      },
+      "upgradeToGenerate": "Upgrade to Generate",
+      "upgradeToExport": "Upgrade to Export",
+      "generateFull": "Generate Full Schema",
+      "exportStructure": "Export Structure"
+    },
+    "output": {
+      "title": "Choose Output",
+      "description": "Select how you want to export your organized data",
+      "folder": {
+        "title": "Organized Folders",
+        "description": "Export as organized folder structure"
+      },
+      "database": {
+        "title": "Database",
+        "description": "Create structured database tables"
+      },
+      "both": {
+        "title": "Both",
+        "description": "Full export with all formats"
+      },
+      "generate": "Generate Output"
+    },
+    "actions": {
+      "title": "Recommended Actions",
+      "crud": {
+        "title": "Build CRUD Application",
+        "description": "Auto-generate a web application with forms for managing your categorized data"
+      },
+      "dashboard": {
+        "title": "Create Analytics Dashboard",
+        "description": "Visualize your data with auto-generated charts and metrics"
+      },
+      "chatbot": {
+        "title": "Build Data Chatbot",
+        "description": "Create a conversational interface to query and explore your organized data"
+      },
+      "reportGen": {
+        "title": "Generate Reports",
+        "description": "Automatically generate periodic reports from your organized data"
+      },
+      "sync": {
+        "title": "Setup Data Sync",
+        "description": "Keep your organized data in sync with the source automatically"
+      }
+    }
+  },
+  "bugReport": {
+    "title": "Report an Issue",
+    "subtitle": "Help us improve by reporting bugs or requesting features",
+    "issueType": "Issue type",
+    "types": {
+      "bug": "Bug",
+      "feature": "Feature",
+      "question": "Question",
+      "other": "Other"
+    },
+    "subject": "Subject",
+    "subjectPlaceholder": "Brief summary of the issue",
+    "description": "Description",
+    "descriptionPlaceholder": "Please describe the issue in detail. What were you trying to do? What happened instead?",
+    "screenshots": "Screenshots",
+    "optional": "optional",
+    "addImage": "Add",
+    "screenshotHint": "Max 3 images, 5MB each. PNG, JPG, or GIF.",
+    "includeContext": "Include diagnostic information",
+    "includeContextDesc": "Helps us debug by sharing URL, browser, and screen size",
+    "submit": "Submit Report",
+    "submitting": "Submitting...",
+    "success": {
+      "title": "Report Submitted!",
+      "description": "Thank you for your feedback. We'll review it shortly.",
+      "ticketId": "Ticket ID"
+    }
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "View and manage your support tickets",
+    "newTicket": "New Ticket",
+    "status": {
+      "open": "Open",
+      "inProgress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "filter": {
+      "all": "All",
+      "open": "Open",
+      "in_progress": "In Progress",
+      "resolved": "Resolved"
+    },
+    "empty": {
+      "title": "No support tickets",
+      "description": "You haven't submitted any tickets yet"
+    },
+    "detail": {
+      "description": "Original description",
+      "created": "Created",
+      "comments": "Comments",
+      "noComments": "No comments yet",
+      "support": "Support",
+      "replyPlaceholder": "Type your reply..."
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Click a category to expand and see all questions",
+    "questionsCount": "{{count}} questions",
+    "categories": {
+      "cloudSecurity": {
+        "title": "OneDrive & Cloud Security",
+        "q1": {
+          "question": "Does SKatalyst use its own Microsoft account to access my OneDrive?",
+          "answer": "No. Absolutely not.\n\nSKatalyst never logs in using its own Microsoft account to access your data. You connect your own Microsoft account via Microsoft's official sign-in and consent screen.\n\n• Microsoft grants access directly to you, not to SKatalyst\n• SKatalyst owns the application registration\n• You own the account, identity, and data"
+        },
+        "q2": {
+          "question": "What credentials does SKatalyst actually have?",
+          "answer": "SKatalyst only has:\n• An Azure AD application ID (to identify itself to Microsoft)\n• A technical client secret (to request OAuth tokens)\n\nThese credentials:\n✗ Cannot access any OneDrive by themselves\n✗ Cannot log in as any user\n✗ Cannot bypass user consent\n\nThey only say: \"This request comes from the SKatalyst AI application.\""
+        },
+        "q3": {
+          "question": "Whose Microsoft account is used during connection?",
+          "answer": "Yours. Always.\n\nWhen you click \"Connect OneDrive\":\n1. You are redirected to Microsoft\n2. You sign in with your Microsoft account\n3. Microsoft asks you to approve access\n4. You can allow or cancel\n\nSKatalyst never sees your password."
+        },
+        "q4": {
+          "question": "Is this the same Microsoft account I used to log in to SKatalyst?",
+          "answer": "It can be, but it does not have to be.\n\nYou may:\n• Log in to SKatalyst with one email\n• Connect OneDrive from a different Microsoft account\n\nSKatalyst will clearly show which Microsoft account is connected — read-only and transparent."
+        },
+        "q5": {
+          "question": "Can SKatalyst see my local OneDrive folder on my computer?",
+          "answer": "No.\n\nSKatalyst:\n• Does not access your local filesystem\n• Does not scan synced OneDrive folders on your Mac or Windows device\n\nTo upload local files, you must explicitly use \"Local Files\" in the data ingestion hub."
+        },
+        "q6": {
+          "question": "What exactly does Microsoft ask me to approve?",
+          "answer": "Microsoft shows a consent screen with:\n• The name \"SKatalyst AI\"\n• The exact permissions requested (e.g. read files you select)\n• The Microsoft account you are signing in with\n\nYou can:\n• Approve\n• Cancel\n• Revoke access later at any time from Microsoft account settings"
+        },
+        "q7": {
+          "question": "Can my IT department restrict or revoke access?",
+          "answer": "Yes.\n\nBecause access is granted via Microsoft OAuth:\n• IT admins can control consent policies\n• Users or admins can revoke access anytime\n• Tokens automatically expire\n\nSKatalyst respects all Microsoft tenant policies."
+        }
+      },
+      "dataPrivacy": {
+        "title": "Data Privacy & Storage",
+        "q1": {
+          "question": "When does SKatalyst actually store my data?",
+          "answer": "Only after you explicitly confirm ingestion.\n\nBefore confirmation:\n• Files are previewed only\n• Data is not persisted\n• Leaving the workspace discards previews\n\nThis is intentional and required for security and compliance."
+        },
+        "q2": {
+          "question": "Do you store raw files?",
+          "answer": "No. We process metadata first, then content during runs. Raw files are not persisted on our servers — only structured outputs."
+        },
+        "q3": {
+          "question": "Do we own the generated schema and apps?",
+          "answer": "Yes. All outputs (schemas, scripts, dashboards, apps) are yours. No vendor lock-in. Export anytime."
+        }
+      },
+      "platform": {
+        "title": "Platform & Deployment",
+        "q1": {
+          "question": "Can you deploy into our Azure tenant?",
+          "answer": "Yes. We support deployment to your Azure, AWS, or GCP infrastructure. You maintain full control of your data and systems."
+        },
+        "q2": {
+          "question": "Can you connect SharePoint/OneDrive?",
+          "answer": "Yes! OneDrive connector is now available in preview. SharePoint connector is coming soon. Currently available: local folders, file upload, OneDrive, and database simulations."
+        },
+        "q3": {
+          "question": "Can we run without context?",
+          "answer": "Yes. Context is optional. Without it, we use heuristic analysis. With context, results are more accurate and business-aligned."
+        },
+        "q4": {
+          "question": "How do pricing and quotas work?",
+          "answer": "Free tier includes 1GB data processing, 5 runs/month, and 2 connectors. Pro and Business plans offer more capacity. Pay only for what you use."
+        },
+        "q5": {
+          "question": "Why does SKatalyst work this way?",
+          "answer": "This design ensures:\n• No silent data access\n• Clear ownership boundaries\n• Enterprise-grade auditability\n• GDPR-aligned consent handling\n\nIt is the same model used by tools like Notion, Slack, and Zapier."
+        }
+      }
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "subtitle": "Manage your team and view workspace analytics",
+    "roles": {
+      "owner": "Owner",
+      "admin": "Admin",
+      "member": "Member"
+    },
+    "stats": {
+      "totalRuns": "Total Runs",
+      "filesProcessed": "Files Processed",
+      "activeMembers": "Active Members",
+      "totalCost": "Total Cost"
+    },
+    "members": {
+      "title": "Team Members",
+      "invite": "Invite",
+      "remove": "Remove",
+      "confirmRemove": "Are you sure you want to remove this member?"
+    },
+    "runs": {
+      "title": "Recent Runs"
+    },
+    "invite": {
+      "title": "Invite Team Member",
+      "email": "Email address",
+      "emailPlaceholder": "colleague@example.com",
+      "role": "Role",
+      "send": "Send Invite",
+      "sending": "Sending..."
+    },
+    "tabs": {
+      "overview": "Overview",
+      "support": "Support Mode"
+    },
+    "support": {
+      "title": "Operator Support Mode",
+      "subtitle": "View runs, errors, and audit logs for troubleshooting",
+      "recentErrors": "Recent Errors & Warnings",
+      "allRuns": "All Runs",
+      "runs": "runs",
+      "auditLogs": "Audit Logs"
+    }
+  },
+  "outputTargets": {
+    "pageTitle": "Output Targets",
+    "subtitle": "Configure destinations for your processed data",
+    "infoBannerTitle": "Output targets are write destinations",
+    "infoBannerDesc": "Configure where to write your processed data. Supports databases (PostgreSQL) and cloud storage (Azure Blob, S3).",
+    "addTarget": "Add Target",
+    "configuredTargets": "Configured Targets",
+    "noTargets": "No output targets configured yet",
+    "noTargetsHint": "Click one of the target types above to add your first output destination",
+    "testConnection": "Test",
+    "deleteConfirmTitle": "Delete Output Target?",
+    "deleteConfirmDesc": "This action cannot be undone. Any pending write executions using this target will fail.",
+    "addTargetTitle": "Add {{type}} Target",
+    "saveTarget": "Save Target"
+  },
+  "writeWizard": {
+    "title": "Write Outputs",
+    "steps": {
+      "select": "Select Target",
+      "preview": "Preview",
+      "confirm": "Confirm",
+      "execute": "Execute",
+      "verify": "Verify"
+    },
+    "selectTarget": "Select Output Target",
+    "selectTargetDesc": "Choose where to write the processed data from this run.",
+    "noTargets": "No output targets configured",
+    "noTargetsHint": "Go to Output Targets page to add one.",
+    "previewTitle": "Write Preview",
+    "summary": "Summary",
+    "targetType": "Target Type",
+    "estimatedRows": "Estimated Rows",
+    "estimatedBytes": "Estimated Size",
+    "operations": "Operations",
+    "plannedOperations": "Planned Operations",
+    "warnings": "Warnings",
+    "irreversibleWarning": "This action writes data to external systems",
+    "irreversibleDesc": "Data will be written to your selected target. While rollback is available for 24 hours, this action may have side effects on your systems.",
+    "rollbackInfo": "Rollback Window",
+    "rollbackInfoDesc": "You can rollback this write within 24 hours. After that, rollback is no longer available.",
+    "rollbackDeadline": "Rollback deadline",
+    "aboutToWrite": "About to write",
+    "target": "Target",
+    "rows": "Rows",
+    "size": "Size",
+    "confirmCheckbox": "I understand that this will write data to the selected target and acknowledge the potential impact on my systems.",
+    "confirmAndExecute": "Confirm & Execute",
+    "executing": "Executing Write...",
+    "preparingWrite": "Preparing write operation...",
+    "progress": "Progress",
+    "executionFailed": "Execution Failed",
+    "writeComplete": "Write Complete!",
+    "writeVerified": "All data was written and verified successfully.",
+    "verificationIssue": "Verification Issue",
+    "verificationMismatch": "Some items may not have been written correctly.",
+    "verificationDetails": "Verification Details",
+    "expectedItems": "Expected Items",
+    "actualItems": "Actual Items",
+    "bytesExpected": "Expected Bytes",
+    "bytesActual": "Actual Bytes",
+    "rollbackManifest": "Rollback Manifest",
+    "tablesCreated": "Tables and rows can be rolled back within 24 hours.",
+    "objectsUploaded": "{{count}} objects uploaded",
+    "rollbackAvailableUntil": "Rollback available until",
+    "rollback": "Rollback Write",
+    "rollbackConfirm": "Are you sure you want to rollback this write execution? This will delete all written data.",
+    "rolledBack": "This write has been rolled back."
+  },
+  "pilot": {
+    "banner": "Pilot Program",
+    "bannerSubtext": "– Early access with usage limits. See billing for details.",
+    "rateLimitWarning": "Approaching data limit",
+    "used": "used",
+    "upgrade": "View Usage",
+    "contactSales": "Contact Sales",
+    "expiry": {
+      "active": "Your pilot is active",
+      "expiresIn": "Expires in {{hours}} hours",
+      "readOnly": "Read-only mode",
+      "readOnlyDesc": "Your pilot has expired. You can view your data for {{hours}} more hour(s).",
+      "hardBlocked": "Pilot access expired",
+      "hardBlockedDesc": "Your pilot access has fully expired. Upgrade to continue."
+    },
+    "conversion": {
+      "title": "Continue Using Premium Features",
+      "subtitle": "Upgrade to keep running data ingestion jobs",
+      "dataPreserved": "Your data is preserved",
+      "dataPreservedDesc": "All your uploaded files, runs, and results are saved. Upgrade anytime to access them.",
+      "recommendedPlan": "Recommended for you",
+      "usageSummary": "Your pilot usage",
+      "upgradeNow": "Upgrade Now",
+      "viewPlans": "View Plans"
+    },
+    "postExpiry": {
+      "viewData": "View Data",
+      "runIngestion": "Run Ingestion",
+      "writeOutputs": "Write Outputs",
+      "useGoogleOCR": "Google OCR",
+      "useVisualUnderstanding": "Visual AI",
+      "allowed": "Available",
+      "blocked": "Upgrade required"
+    }
+  },
+  "media": {
+    "processing": {
+      "success": "Processed successfully",
+      "partial": "Partially processed",
+      "failed": "Processing failed",
+      "skipped": "Skipped",
+      "unsupported": "Format not supported"
+    },
+    "video": {
+      "contextNote": "Context inferred from video metadata (duration, resolution, codec).",
+      "nonFeature": "Video audio transcription is not included in this release.",
+      "signalsExtracted": "Structural metadata extracted"
+    },
+    "image": {
+      "ocrNote": "Text extracted via OCR for context alignment.",
+      "visualNote": "Visual labels provide estimated context signals.",
+      "labelDisclaimer": "Labels are descriptive estimates. No accuracy guaranteed."
+    },
+    "errors": {
+      "fileCorrupt": "File is corrupted or unreadable",
+      "fileTooLarge": "File exceeds maximum size limit",
+      "fileNotFound": "File not found",
+      "unsupportedFormat": "File format is not supported",
+      "unsupportedCodec": "Video codec is not supported",
+      "extractionFailed": "Failed to extract content",
+      "timeout": "Processing timed out",
+      "unknown": "An unknown error occurred"
+    },
+    "disclaimers": {
+      "videoTranscription": "Video audio transcription is not included. Context is inferred from metadata only.",
+      "ocrAccuracy": "OCR text may contain errors. Original files are authoritative.",
+      "visualLabels": "Visual labels are descriptive estimates with no accuracy guarantee."
+    }
+  }
+}

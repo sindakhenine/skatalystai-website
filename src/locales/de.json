@@ -1,0 +1,450 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "save": "Speichern",
+    "saving": "Speichern...",
+    "saved": "Gespeichert",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "search": "Suchen",
+    "help": "Hilfe",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren",
+    "viewAll": "Alle anzeigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "submit": "Absenden",
+    "close": "Schließen",
+    "soon": "Bald",
+    "pro": "Pro",
+    "start": "Starten",
+    "copy": "Kopieren",
+    "skip": "Vorerst überspringen",
+    "retry": "Erneut versuchen"
+  },
+  "nav": {
+    "mainMenu": "Hauptmenü",
+    "dashboard": "Dashboard",
+    "connectors": "Datenquellen",
+    "runs": "Ausführungen",
+    "contexts": "Kontextbibliothek",
+    "dataIngestion": "Datenaufnahme",
+    "organizedData": "Organisierte Daten",
+    "metrics": "Metriken",
+    "blueprints": "Vorlagen",
+    "billing": "Abrechnung",
+    "beta": "Tests & Zugang",
+    "support": "Support",
+    "admin": "Verwaltung",
+    "agents": "Lokale Agenten",
+    "settings": "Einstellungen",
+    "storageUsed": "Speicher verwendet",
+    "storageAmount": "{{used}} GB von {{total}} GB",
+    "version": "Version {{version}}"
+  },
+  "header": {
+    "searchPlaceholder": "Daten, Aufgaben, Einstellungen suchen...",
+    "notifications": "Benachrichtigungen"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Übersicht Ihrer Datenorganisation",
+    "recentActivity": "Letzte Aktivität",
+    "quickActions": "Schnellaktionen",
+    "noActivity": "Keine aktuellen Aktivitäten"
+  },
+  "ingest": {
+    "title": "Datenaufnahme",
+    "subtitle": "Laden Sie Ihre Datenquellen hoch und verbinden Sie sie",
+    "dropzone": {
+      "title": "Dateien hier ablegen oder klicken zum Hochladen",
+      "subtitle": "Unterstützung für CSV, JSON, Excel, PDF und mehr",
+      "uploading": "Dateien werden hochgeladen..."
+    }
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Starten Sie kostenlos und skalieren Sie nach Bedarf. Keine versteckten Gebühren.",
+    "free": "Kostenlos",
+    "pro": "Pro",
+    "business": "Business",
+    "enterprise": "Enterprise",
+    "perMonth": "/Monat",
+    "forever": "/für immer",
+    "currentPlan": "Aktueller Plan",
+    "recommended": "Empfohlen",
+    "mostPopular": "Am beliebtesten",
+    "selectPlan": "Plan auswählen",
+    "comingSoon": "Demnächst verfügbar",
+    "contactSales": "Vertrieb kontaktieren",
+    "features": {
+      "dataProcessing": "{{amount}} Datenverarbeitung",
+      "runsPerMonth": "{{count}} Ausführungen pro Monat",
+      "unlimitedRuns": "Unbegrenzte Ausführungen",
+      "connectors": "{{count}} Datenquellen-Konnektoren",
+      "unlimitedConnectors": "Unbegrenzte Konnektoren",
+      "basicTheme": "Basis-Themenerkennung",
+      "advancedAI": "Erweiterte KI-Analyse",
+      "prioritySupport": "Prioritäts-Support",
+      "customFormats": "Benutzerdefinierte Ausgabeformate",
+      "teamCollaboration": "Team-Zusammenarbeit",
+      "apiAccess": "API-Zugang",
+      "ssoAudit": "SSO & Audit-Protokolle",
+      "onPremise": "On-Premise-Bereitstellung",
+      "dedicatedSupport": "Dedizierter Support",
+      "slaGuarantee": "SLA-Garantie"
+    }
+  },
+  "billing": {
+    "title": "Abrechnung & Nutzung",
+    "subtitle": "Verwalten Sie Ihr Abonnement und überwachen Sie Ihre Nutzung",
+    "currentPlan": "Aktueller Plan",
+    "freeTier": "Kostenlose Stufe",
+    "usage": {
+      "dataScanned": "Gescannte Daten",
+      "runs": "Ausführungen",
+      "connectors": "Konnektoren",
+      "thisPeriod": "Dieser Zeitraum",
+      "thisMonth": "Dieser Monat",
+      "active": "Aktiv"
+    },
+    "billingHistory": "Abrechnungsverlauf",
+    "noHistory": "Noch kein Abrechnungsverlauf"
+  },
+  "beta": {
+    "title": "Tests & Zugang",
+    "subtitle": "Geben Sie Ihren Gutscheincode ein, um Funktionen freizuschalten",
+    "activeSubtitle": "Ihr Zugang ist aktiv",
+    "activateVoucher": "Gutschein aktivieren",
+    "voucherCode": "Gutscheincode",
+    "voucherPlaceholder": "BETA-XXXX oder EVENT-XXXX",
+    "timeRemaining": "Verbleibende Zeit",
+    "activate": "Zugang aktivieren",
+    "activating": "Wird aktiviert...",
+    "types": {
+      "event": {
+        "badge": "Event-Demo",
+        "validMessage": "Gültiger Event-Demo-Gutschein!",
+        "activatedMessage": "Event-Demo aktiviert!",
+        "title": "Event-Demo-Gutscheine",
+        "duration": "24-Stunden-Zugang für Konferenzen und Events",
+        "feature1": "Praktische Erfahrung mit allen Funktionen",
+        "feature2": "Perfekt für Demo-Sessions und Workshops"
+      },
+      "beta": {
+        "badge": "Beta-Test",
+        "validMessage": "Gültiger Beta-Test-Gutschein!",
+        "activatedMessage": "Beta-Test aktiviert!",
+        "title": "Beta-Test-Gutscheine",
+        "duration": "Erweiterte Testphase von 7-14 Tagen",
+        "feature1": "Voller Zugang zur Plattformbewertung",
+        "feature2": "Ideal für Unternehmen, die Skatalyst erkunden"
+      }
+    },
+    "included": {
+      "title": "Enthalten",
+      "ocr": "Voller Zugang zu Google Cloud Vision OCR",
+      "vision": "KI-Bildverständnis für Bilder",
+      "connectors": "Enterprise-Konnektoren (OneDrive, SharePoint)",
+      "priority": "Prioritäts-Verarbeitungswarteschlange"
+    },
+    "howItWorks": {
+      "title": "So funktioniert's",
+      "step1": "Geben Sie oben Ihren Gutscheincode ein",
+      "step2": "Überprüfen Sie Funktionen und Dauer",
+      "step3": "Klicken Sie auf aktivieren, um Ihre Zugangsperiode zu starten",
+      "step4": "Der Zugang wird sofort freigeschaltet",
+      "note": "Der Zugang ist temporär und beinhaltet Nutzungslimits. Ihre Daten und Einstellungen bleiben nach Ablauf erhalten."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "expiryQ": "Was passiert, wenn mein Zugang abläuft?",
+      "expiryA": "Ihr Konto kehrt zu Ihrem vorherigen Plan zurück. Alle Daten bleiben erhalten, aber Premium-Funktionen werden nicht verfügbar.",
+      "multipleQ": "Kann ich mehrere Gutscheine verwenden?",
+      "multipleA": "Sie können jeweils einen Gutschein einlösen. Warten Sie, bis Ihr aktueller Zugang abläuft, bevor Sie einen neuen aktivieren.",
+      "limitsQ": "Welche Nutzungslimits gibt es?",
+      "limitsA": "Jede Stufe hat spezifische Limits für OCR, Vision und Token-Nutzung. Wenn Limits erreicht sind, können Sie weiterhin kostenlose Funktionen nutzen."
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "theme": {
+      "title": "Design",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "language": {
+      "title": "Sprache",
+      "select": "Sprache auswählen"
+    },
+    "currency": {
+      "title": "Währung",
+      "select": "Währung auswählen"
+    }
+  },
+  "auth": {
+    "welcomeBack": "Willkommen zurück",
+    "signInSubtitle": "Melden Sie sich bei Ihrem SkatalystAI-Konto an",
+    "createAccount": "Konto erstellen",
+    "signUpSubtitle": "Starten Sie kostenlos mit SkatalystAI",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "continueWithMicrosoft": "Mit Microsoft fortfahren",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Haben Sie bereits ein Konto?",
+    "signUpFree": "Kostenlos registrieren",
+    "signIn": "Anmelden",
+    "accountType": "Kontotyp",
+    "personal": "Persönlich",
+    "company": "Unternehmen",
+    "personalDesc": "Für individuelle Nutzung",
+    "companyDesc": "Für Teams und Organisationen",
+    "companyName": "Unternehmensname",
+    "companyNamePlaceholder": "Geben Sie Ihren Firmennamen ein",
+    "emailAddress": "E-Mail-Adresse",
+    "emailPlaceholder": "sie@beispiel.de",
+    "password": "Passwort",
+    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+    "signInWithEmail": "Mit E-Mail anmelden",
+    "or": "oder",
+    "soon": "Bald",
+    "moreLoginOptions": "Weitere Anmeldeoptionen in Kürze verfügbar, einschließlich Microsoft SSO und E-Mail-/Passwort-Authentifizierung.",
+    "moreSignupOptions": "Weitere Registrierungsoptionen in Kürze verfügbar, einschließlich Microsoft SSO und E-Mail-/Passwort-Registrierung.",
+    "agreeTerms": "Mit Ihrer Anmeldung stimmen Sie unseren",
+    "agreeTermsSignup": "Mit Ihrer Registrierung stimmen Sie unseren",
+    "termsOfService": "Nutzungsbedingungen",
+    "and": "und",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "freeTierIncludes": "Kostenloses Paket enthält:",
+    "freeDataProcessing": "1 GB Datenverarbeitung",
+    "freeRuns": "5 Ausführungen pro Monat",
+    "freeConnectors": "2 Datenquellen-Konnektoren",
+    "errors": {
+      "accessDenied": "Sie haben die Anmeldung abgebrochen. Bitte versuchen Sie es erneut.",
+      "noCode": "Authentifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "authFailed": "Authentifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "logout": "Abmelden"
+  },
+  "about": {
+    "title": "Über SkatalystAI",
+    "subtitle": "Unsere Mission ist es, Organisationen zu helfen, ihr Datenchaos zu verstehen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "p1": "Jede Organisation kämpft mit Datenchaos. Dateien, die auf mehreren Laufwerken verstreut sind, Dokumente mit inkonsistenten Namen, wertvolle Informationen, die in Ordnern vergraben sind, an die sich niemand erinnert. Der durchschnittliche Wissensarbeiter verbringt 2,5 Stunden pro Tag mit der Suche nach Informationen.",
+      "p2": "SkatalystAI wurde entwickelt, um dieses Problem zu lösen. Unsere KI-gestützte Plattform analysiert unstrukturierte Daten und verwandelt sie in organisierte, strukturierte Assets, die Teams tatsächlich nutzen können.",
+      "p3": "Wir glauben, dass Datenorganisation kein Team von Ingenieuren oder monatelange manuelle Arbeit erfordern sollte. Mit SkatalystAI können Sie in Minuten vom Chaos zur Klarheit gelangen."
+    },
+    "whatWeDo": {
+      "title": "Was wir tun",
+      "ingestion": "Datenaufnahme",
+      "ingestionDesc": "Verbinden Sie sich mit lokalen Ordnern, laden Sie Dateien hoch oder integrieren Sie Cloud-Speicher. Wir unterstützen eine Vielzahl von Formaten, einschließlich Dokumente, Tabellenkalkulationen, Bilder und mehr.",
+      "analysis": "KI-Analyse",
+      "analysisDesc": "Unsere fortschrittliche KI analysiert Ihre Daten, um Themen zu erkennen, Muster zu identifizieren und Beziehungen zu verstehen. Wir verwenden modernste Sprachmodelle, um selbst die unordentlichsten Daten zu verstehen.",
+      "output": "Strukturierte Ausgabe",
+      "outputDesc": "Erhalten Sie organisierte Ordnerstrukturen, Datenbankschemata und umsetzbare Vorschläge. Wählen Sie, wie Ihre Daten organisiert werden sollen, und exportieren Sie sie in dem Format, das für Ihr Team am besten funktioniert."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "privacy": "Datenschutz zuerst",
+      "privacyDesc": "Ihre Daten gehören Ihnen. Wir verarbeiten lokal, wenn möglich, und speichern niemals Ihre sensiblen Informationen.",
+      "speed": "Geschwindigkeit zählt",
+      "speedDesc": "Zeit ist wertvoll. Wir optimieren jeden Schritt, um Ihnen schnell Ergebnisse zu liefern, ohne Qualitätseinbußen.",
+      "transparency": "Transparenz",
+      "transparencyDesc": "Klare Preise, ehrliche Kommunikation und keine versteckten Überraschungen. Sie wissen immer, was Sie bekommen.",
+      "userFocus": "Benutzerfokus",
+      "userFocusDesc": "Für echte Menschen mit echten Problemen entwickelt. Wir hören auf Feedback und iterieren ständig."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Haben Sie Fragen? Wir würden gerne von Ihnen hören.",
+      "contactUs": "Kontakt aufnehmen",
+      "tryFree": "SkatalystAI kostenlos testen"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Transformieren Sie unstrukturierte Daten",
+      "titleHighlight": "in produktionsreife Assets",
+      "subtitle": "SKatalyst hilft Teams, unstrukturierte Unternehmensdaten in strukturierte, wiederverwendbare Datenquellen umzuwandeln — sicher, transparent und ohne Herstellerbindung.",
+      "cta": "Kostenlos starten",
+      "secondaryCta": "Preise ansehen",
+      "freeNote": "1 GB kostenlose Verarbeitung. Keine Kreditkarte erforderlich."
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "subtitle": "Vom Chaos zur Struktur in drei Schritten. Ohne Programmierkenntnisse.",
+      "step1Title": "Verbinden Sie Ihre Daten",
+      "step1Desc": "Verweisen Sie SkatalystAI auf lokale Ordner, laden Sie Dateien hoch oder verbinden Sie Cloud-Speicher. Wir scannen alles und erstellen ein Inventar.",
+      "step2Title": "Überprüfen Sie die Analyse",
+      "step2Desc": "Unsere KI erkennt Themen, identifiziert Duplikate und zeigt Beziehungen auf. Überprüfen Sie die Ergebnisse und passen Sie bei Bedarf an.",
+      "step3Title": "Exportieren Sie die Struktur",
+      "step3Desc": "Generieren Sie SQL-Schemas, organisierte Ordner oder beides. Laden Sie sofort herunter oder stellen Sie auf Ihrer Infrastruktur bereit."
+    },
+    "useCases": {
+      "title": "Für echte Probleme entwickelt",
+      "subtitle": "Sehen Sie, wie verschiedene Teams SkatalystAI nutzen, um Datenchaos zu lösen.",
+      "operationsLead": "Betriebsleiter",
+      "operationsProblem": "Wir haben 10 Jahre Projektdateien auf 5 Laufwerken verstreut.",
+      "operationsSolution": "SkatalystAI scannt alle Quellen, erkennt Projektthemen und schlägt eine einheitliche Struktur mit automatischer Deduplizierung vor.",
+      "operationsOutcome": "Einheitliche Projektbibliothek in Tagen, nicht Monaten",
+      "dataEngineer": "Dateningenieur",
+      "dataEngineerProblem": "Unser Legacy-System exportiert 50 verschiedene CSV-Formate.",
+      "dataEngineerSolution": "SkatalystAI analysiert Schemas, identifiziert Beziehungen und generiert normalisierte Datenbankstrukturen für die Migration.",
+      "dataEngineerOutcome": "Datenbankfertige Schemas mit Migrationsskripten",
+      "complianceOfficer": "Compliance-Beauftragter",
+      "complianceProblem": "Wir müssen prüfen, welche Kundendaten in unseren Systemen existieren.",
+      "complianceSolution": "SkatalystAI inventarisiert alle Datenquellen, markiert PII-Muster und generiert automatisch Datenfluss-Dokumentation.",
+      "complianceOutcome": "Vollständiges Dateninventar für Compliance-Berichte"
+    },
+    "outputs": {
+      "title": "Was Sie nach der Analyse erhalten",
+      "subtitle": "SkatalystAI analysiert nicht nur. Es liefert verwertbare Ergebnisse.",
+      "schemas": "Datenbankschemas",
+      "schemasDesc": "Produktionsreifes SQL mit korrekten Typen, Beziehungen und Indizes.",
+      "folders": "Organisierte Ordner",
+      "foldersDesc": "Logische Ordnerhierarchie basierend auf erkannten Themen und Daten.",
+      "report": "Analysebericht",
+      "reportDesc": "Themenaufschlüsselung, Konfidenzwerte und Rauschidentifikation.",
+      "scripts": "Migrationsskripte",
+      "scriptsDesc": "Sofort einsetzbare Skripte für den Import in Ihre Systeme.",
+      "seeReport": "Beispielbericht ansehen"
+    },
+    "trust": {
+      "title": "Ihre Daten. Ihre Kontrolle.",
+      "subtitle": "Wir haben SkatalystAI für Unternehmen entwickelt, die bei der Datensicherheit keine Kompromisse eingehen können. Hier ist genau, was mit Ihren Daten passiert.",
+      "noStorage": "Rohdateien werden nie gespeichert",
+      "noStorageDesc": "Dateien werden im Speicher verarbeitet und verworfen. Nur strukturelle Metadaten werden für die Ausgabegenerierung beibehalten.",
+      "isolated": "Isolierte Verarbeitung",
+      "isolatedDesc": "Jede Analyse läuft in einem dedizierten Container. Kein mandantenübergreifender Datenzugriff möglich.",
+      "deletion": "Löschung mit einem Klick",
+      "deletionDesc": "Löschen Sie sofort alle Ihre Daten und Analysehistorie. Keine Aufbewahrungsfristen, keine Fragen.",
+      "audit": "Audit-bereite Protokolle",
+      "auditDesc": "Vollständige Aktivitätsprotokolle für Compliance. Wissen Sie genau, was verarbeitet wurde, wann und von wem.",
+      "flowTitle": "Datenfluss-Garantie",
+      "flow1": "Ihre Dateien über verschlüsselte Verbindung hochgeladen",
+      "flow2": "Verarbeitet in isoliertem Container (nur Ihr Mandant)",
+      "flow3": "Struktur extrahiert, Rohdateien verworfen",
+      "flow4": "Ausgaben generiert und an Sie geliefert",
+      "flow5": "Container zerstört, nichts wird aufbewahrt"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Welche Datentypen kann SkatalystAI verarbeiten?",
+      "a1": "SkatalystAI verarbeitet Dokumente (PDF, Word, Excel), strukturierte Daten (CSV, JSON, XML), Bilder mit Text (via OCR) und Datenbankexporte. Wir unterstützen lokale Ordner, Datei-Uploads und werden bald Cloud-Speicher-Integrationen hinzufügen.",
+      "q2": "Wohin gehen meine Daten während der Verarbeitung?",
+      "a2": "Ihre Daten werden in isolierten, kurzlebigen Containern verarbeitet. Rohdateien werden nie auf unseren Servern gespeichert. Nur die strukturelle Analyse (Themen, Schemas, Beziehungen) wird für die Ausgabegenerierung beibehalten. Sie können alle Analysedaten jederzeit löschen.",
+      "q3": "Wie genau ist die Themenerkennung?",
+      "a3": "Die Genauigkeit der Themenerkennung hängt von der Datenqualität ab, erreicht aber typischerweise 85-95% Genauigkeit bei gut beschrifteten Geschäftsdokumenten. Elemente mit niedriger Konfidenz werden zur manuellen Überprüfung markiert, und Sie können Kategorisierungen vor der Finalisierung immer anpassen.",
+      "q4": "Kann ich SkatalystAI mit meinen bestehenden Systemen verwenden?",
+      "a4": "Ja. SkatalystAI gibt Standardformate aus: SQL-Schemas, JSON-Konfigurationen und organisierte Ordnerstrukturen. Diese integrieren sich direkt in bestehende Datenbanken, ETL-Pipelines und Dateiverwaltungssysteme."
+    },
+    "cta": {
+      "title": "Bereit, Ihre Daten zu organisieren?",
+      "subtitle": "Starten Sie mit 1 GB kostenlos. Sehen Sie Ergebnisse in Minuten.",
+      "learnMore": "Mehr über uns erfahren"
+    }
+  },
+  "footer": {
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "apiReference": "API-Referenz",
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "disclaimer": "Haftungsausschluss",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "errors": {
+    "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "notFound": "Seite nicht gefunden",
+    "unauthorized": "Sie sind nicht berechtigt, diese Seite anzuzeigen",
+    "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Klicken Sie auf eine Kategorie, um alle Fragen zu sehen",
+    "questionsCount": "{{count}} Fragen",
+    "categories": {
+      "cloudSecurity": {
+        "title": "OneDrive & Cloud-Sicherheit",
+        "q1": {
+          "question": "Verwendet SKatalyst sein eigenes Microsoft-Konto, um auf mein OneDrive zuzugreifen?",
+          "answer": "Nein. Absolut nicht.\n\nSKatalyst meldet sich niemals mit seinem eigenen Microsoft-Konto an, um auf Ihre Daten zuzugreifen. Sie verbinden Ihr eigenes Microsoft-Konto über den offiziellen Anmelde- und Zustimmungsbildschirm von Microsoft.\n\n• Microsoft gewährt den Zugriff direkt an Sie, nicht an SKatalyst\n• SKatalyst besitzt die Anwendungsregistrierung\n• Sie besitzen das Konto, die Identität und die Daten"
+        },
+        "q2": {
+          "question": "Welche Anmeldedaten hat SKatalyst tatsächlich?",
+          "answer": "SKatalyst hat nur:\n• Eine Azure AD-Anwendungs-ID (um sich bei Microsoft zu identifizieren)\n• Ein technisches Client-Geheimnis (um OAuth-Token anzufordern)\n\nDiese Anmeldedaten:\n✗ Können nicht selbstständig auf OneDrive zugreifen\n✗ Können sich nicht als Benutzer anmelden\n✗ Können die Benutzerzustimmung nicht umgehen\n\nSie sagen nur: ‚Diese Anfrage kommt von der SKatalyst AI-Anwendung.'"
+        },
+        "q3": {
+          "question": "Welches Microsoft-Konto wird bei der Verbindung verwendet?",
+          "answer": "Ihres. Immer.\n\nWenn Sie auf ‚OneDrive verbinden' klicken:\n1. Sie werden zu Microsoft weitergeleitet\n2. Sie melden sich mit Ihrem Microsoft-Konto an\n3. Microsoft bittet Sie, den Zugriff zu genehmigen\n4. Sie können erlauben oder abbrechen\n\nSKatalyst sieht niemals Ihr Passwort."
+        },
+        "q4": {
+          "question": "Ist dies dasselbe Microsoft-Konto, mit dem ich mich bei SKatalyst angemeldet habe?",
+          "answer": "Es kann sein, muss aber nicht.\n\nSie können:\n• Sich bei SKatalyst mit einer E-Mail anmelden\n• OneDrive von einem anderen Microsoft-Konto verbinden\n\nSKatalyst zeigt deutlich an, welches Microsoft-Konto verbunden ist — schreibgeschützt und transparent."
+        },
+        "q5": {
+          "question": "Kann SKatalyst meinen lokalen OneDrive-Ordner auf meinem Computer sehen?",
+          "answer": "Nein.\n\nSKatalyst:\n• Greift nicht auf Ihr lokales Dateisystem zu\n• Scannt keine synchronisierten OneDrive-Ordner auf Ihrem Mac oder Windows-Gerät\n\nUm lokale Dateien hochzuladen, müssen Sie explizit ‚Lokale Dateien' im Datenaufnahme-Hub verwenden."
+        },
+        "q6": {
+          "question": "Was genau bittet mich Microsoft zu genehmigen?",
+          "answer": "Microsoft zeigt einen Zustimmungsbildschirm mit:\n• Dem Namen ‚SKatalyst AI'\n• Den genauen angeforderten Berechtigungen (z.B. ausgewählte Dateien lesen)\n• Dem Microsoft-Konto, mit dem Sie sich anmelden\n\nSie können:\n• Genehmigen\n• Abbrechen\n• Den Zugriff jederzeit über Ihre Microsoft-Kontoeinstellungen widerrufen"
+        },
+        "q7": {
+          "question": "Kann meine IT-Abteilung den Zugriff einschränken oder widerrufen?",
+          "answer": "Ja.\n\nDa der Zugriff über Microsoft OAuth gewährt wird:\n• IT-Administratoren können Zustimmungsrichtlinien kontrollieren\n• Benutzer oder Administratoren können den Zugriff jederzeit widerrufen\n• Token laufen automatisch ab\n\nSKatalyst respektiert alle Microsoft-Mandantenrichtlinien."
+        }
+      },
+      "dataPrivacy": {
+        "title": "Datenschutz & Speicherung",
+        "q1": {
+          "question": "Wann speichert SKatalyst tatsächlich meine Daten?",
+          "answer": "Erst nachdem Sie die Aufnahme explizit bestätigt haben.\n\nVor der Bestätigung:\n• Dateien werden nur in der Vorschau angezeigt\n• Daten werden nicht persistiert\n• Beim Verlassen des Arbeitsbereichs werden Vorschauen verworfen\n\nDies ist beabsichtigt und für Sicherheit und Compliance erforderlich."
+        },
+        "q2": {
+          "question": "Speichern Sie Rohdateien?",
+          "answer": "Nein. Wir verarbeiten zuerst Metadaten, dann den Inhalt während der Ausführungen. Rohdateien werden nicht auf unseren Servern persistiert — nur strukturierte Ausgaben."
+        },
+        "q3": {
+          "question": "Gehören uns die generierten Schemas und Apps?",
+          "answer": "Ja. Alle Ausgaben (Schemas, Skripte, Dashboards, Apps) gehören Ihnen. Kein Vendor Lock-in. Jederzeit exportieren."
+        }
+      },
+      "platform": {
+        "title": "Plattform & Bereitstellung",
+        "q1": {
+          "question": "Können Sie in unserem Azure-Mandanten bereitstellen?",
+          "answer": "Ja. Wir unterstützen die Bereitstellung auf Ihrer Azure-, AWS- oder GCP-Infrastruktur. Sie behalten die volle Kontrolle über Ihre Daten und Systeme."
+        },
+        "q2": {
+          "question": "Können Sie SharePoint/OneDrive verbinden?",
+          "answer": "Ja! Der OneDrive-Konnektor ist jetzt als Vorschau verfügbar. Der SharePoint-Konnektor kommt bald. Derzeit verfügbar: lokale Ordner, Datei-Upload, OneDrive und Datenbank-Simulationen."
+        },
+        "q3": {
+          "question": "Können wir ohne Kontext ausführen?",
+          "answer": "Ja. Kontext ist optional. Ohne ihn verwenden wir heuristische Analyse. Mit Kontext sind die Ergebnisse genauer und geschäftsausgerichtet."
+        },
+        "q4": {
+          "question": "Wie funktionieren Preise und Kontingente?",
+          "answer": "Die kostenlose Stufe umfasst 1 GB Datenverarbeitung, 5 Ausführungen/Monat und 2 Konnektoren. Pro- und Business-Pläne bieten mehr Kapazität. Zahlen Sie nur, was Sie nutzen."
+        },
+        "q5": {
+          "question": "Warum funktioniert SKatalyst so?",
+          "answer": "Dieses Design gewährleistet:\n• Kein stiller Datenzugriff\n• Klare Eigentumsgrenzen\n• Unternehmensreife Prüfbarkeit\n• DSGVO-konforme Einwilligungsverarbeitung\n\nEs ist das gleiche Modell, das von Tools wie Notion, Slack und Zapier verwendet wird."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "skatalyst-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://skatalystai.com",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "axios": "^1.4.0",
+    "file-saver": "^2.0.5",
+    "i18next": "^23.7.6",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "jszip": "^3.10.1",
+    "mermaid": "^11.12.2",
+    "mssql": "^12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-i18next": "^13.5.0",
+    "react-router-dom": "^6.30.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "REACT_APP_GIT_SHA=$(git rev-parse --short HEAD 2>/dev/null || echo 'unknown') REACT_APP_BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) react-scripts build",
+    "build:win": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.0"
+  }
+}
