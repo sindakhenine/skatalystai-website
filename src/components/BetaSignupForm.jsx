@@ -69,7 +69,7 @@ export default function BetaSignupForm() {
         </div>
         <p className="text-base font-medium text-text-primary">You&rsquo;re on the list!</p>
         <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-          We&rsquo;ll email you the moment your access is ready for the October beta.
+          We&rsquo;ll email you the moment your access opens.
           Check your inbox for a confirmation.
         </p>
       </div>
@@ -109,7 +109,7 @@ export default function BetaSignupForm() {
       )}
 
       <p className="mt-3 text-xs text-text-secondary text-left">
-        Join the launch list for the beta opening in October. No spam, just one email when it&rsquo;s ready.
+        Join the beta launch list. No spam, just one email when access opens.
       </p>
     </form>
   );

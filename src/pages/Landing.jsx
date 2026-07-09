@@ -212,7 +212,7 @@ export default function Landing() {
     ['Docker export', 'The whole result as code you run anywhere.', <MiniExport key="e" />],
   ];
 
-  const steps = ['Upload or connect data', 'Scan inventory and context', 'Recommend structure and architecture', 'Generate apps and docs', 'Validate, export, own'];
+  const steps = ['Upload local data', 'Scan inventory and context', 'Recommend structure and architecture', 'Generate apps and docs', 'Validate, export, own'];
 
   const comparisons = [
     ['BI tools', 'chart data you already cleaned. SKatalyst does the structuring first.'],
@@ -230,7 +230,7 @@ export default function Landing() {
     ['Validation and export', 'Run quality checks, then export a Docker/self-deploy package.'],
     ['Data-rights requests', 'Request data export or deletion through an audited beta workflow.'],
   ];
-  const stillInPreview = ['Cloud connector execution', 'Managed SKatalyst hosting', 'Paid billing', 'Fully automated deletion/export'];
+  const stillInPreview = ['Cloud connector execution', 'Managed app hosting', 'Paid billing', 'Fully automated deletion/export'];
 
   return (
     <PublicLayout>
@@ -282,7 +282,7 @@ export default function Landing() {
       {/* ============ 3. SYSTEM BLUEPRINT (outputs w/ mini previews) ============ */}
       <section id="blueprint" className="py-14 md:py-18 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="The system blueprint you get" sub="Concrete assets, generated from your data. Every card below is a real output." />
+          <SectionTitle title="The system blueprint you get" sub="Concrete assets, generated from your data. Real beta outputs generated from uploaded data." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {blueprintCards.map(([title, caption, preview]) => (
               <div key={title} className="rounded-xl border border-light-border bg-white p-4 hover:shadow-md transition-shadow">

@@ -72,7 +72,7 @@ function PublicHeader() {
             <a href="/#how-it-works" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">How it works</a>
             <a href="/#blueprint" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">Outputs</a>
             <a href="/#beta-scope" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">Beta scope</a>
-            <NavLink to="/pricing">{t('nav.billing')}</NavLink>
+            <NavLink to="/pricing">{t('nav.betaAccess', 'Beta access')}</NavLink>
             <NavLink to="/about">About</NavLink>
           </nav>
 
@@ -152,7 +152,7 @@ function PublicFooter() {
             <ul className="space-y-3">
               <li>
                 <Link to="/pricing" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-                  {t('nav.billing')}
+                  {t('nav.betaAccess', 'Beta access')}
                 </Link>
               </li>
               <li>
@@ -162,7 +162,7 @@ function PublicFooter() {
               </li>
               <li>
                 <Link to="/login" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-                  {t('footer.betaTesterSignIn', 'Beta tester sign in')}
+                  {t('footer.betaTesterSignIn', 'Existing beta tester sign in')}
                 </Link>
               </li>
             </ul>
@@ -247,10 +247,10 @@ function PublicFooter() {
 
         <div className="mt-8 pt-8 border-t border-light-border flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="SkatalystAI" className="h-8 w-auto" />
+            <img src={logo} alt="SKatalyst AI" className="h-8 w-auto" />
           </div>
           <p className="text-sm text-text-secondary">
-            &copy; {new Date().getFullYear()} SkatalystAI. {t('footer.rights')}
+            &copy; {new Date().getFullYear()} SKatalyst AI. {t('footer.rights')}
           </p>
         </div>
       </div>

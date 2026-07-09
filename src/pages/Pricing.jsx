@@ -111,7 +111,7 @@ export default function Pricing() {
       name: t('pricing.free'),
       price: formatPrice(basePrices.free),
       period: t('pricing.forever'),
-      description: 'Perfect for trying out SkatalystAI',
+      description: 'Perfect for trying out SKatalyst AI',
       features: [
         t('pricing.features.dataProcessing', { amount: '1 GB' }),
         t('pricing.features.runsPerMonth', { count: 5 }),
