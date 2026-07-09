@@ -233,8 +233,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight max-w-4xl mx-auto">
             Turn messy business data into{' '}
-            <span style={{ color: ION }}>structured databases, dashboards, and apps</span>{' '}
-            <span style={{ color: GREEN }}>you own.</span>
+            <span style={{ color: ION }}>structured databases, dashboards, and apps you own.</span>
           </h1>
           <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: GRAY }}>
             From messy business data to organized systems — without vendor lock-in.
@@ -242,7 +241,7 @@ export default function Landing() {
 
           <ProductMap />
 
-          <div className="mt-8 max-w-md mx-auto">
+          <div id="request-access" className="mt-8 max-w-md mx-auto">
             <BetaSignupForm />
           </div>
           <div className="mt-3">
@@ -364,8 +363,11 @@ export default function Landing() {
       </section>
 
       {/* ============ 8. OWNERSHIP BAND ============ */}
-      <section className="py-14" style={{ backgroundColor: GREEN }}>
+      <section className="py-14" style={{ backgroundColor: '#2F3A44' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <svg className="w-8 h-8 mx-auto mb-4" fill="none" stroke={GREEN} strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true" style={{ filter: 'brightness(2.2)' }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
           <h2 className="text-3xl md:text-4xl font-bold text-white">You leave with assets, not a subscription hostage.</h2>
           <p className="mt-3 text-white/85">
             You own the generated structure, documentation, and export package. SKatalyst is

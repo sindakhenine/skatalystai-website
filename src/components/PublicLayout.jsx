@@ -125,14 +125,15 @@ function PublicHeader() {
               to="/login"
               className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors px-3 py-2"
             >
-              {t('common.login')}
+              {t('common.signIn', 'Sign in')}
             </Link>
-            <Link
-              to="/signup"
+            {/* Beta-safe primary CTA: waitlist, not signup (signup is gated). */}
+            <a
+              href="/#request-access"
               className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-slate rounded-button hover:bg-slate-hover transition-colors shadow-button"
             >
-              {t('common.getStarted')}
-            </Link>
+              {t('common.requestBetaAccess', 'Request beta access')}
+            </a>
           </div>
         </div>
       </div>

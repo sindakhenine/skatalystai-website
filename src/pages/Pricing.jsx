@@ -119,8 +119,8 @@ export default function Pricing() {
         t('pricing.features.basicTheme'),
         'Community support',
       ],
-      cta: t('common.getStarted'),
-      ctaLink: '/signup',
+      cta: t('common.requestBetaAccess', 'Request beta access'),
+      ctaLink: '/#request-access',
     },
     {
       name: t('pricing.pro'),
@@ -136,7 +136,7 @@ export default function Pricing() {
         t('pricing.features.prioritySupport'),
         t('pricing.features.customFormats'),
       ],
-      cta: 'Start Free Trial',
+      cta: t('common.requestBetaAccess', 'Request beta access'),
       ctaLink: '/signup',
       highlighted: true,
       disabled: true,
@@ -300,17 +300,17 @@ export default function Pricing() {
       <section className="py-16 bg-slate">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">
-            Ready to get started?
+            Want to try SKatalyst with your data?
           </h2>
           <p className="text-text-dark-secondary max-w-xl mx-auto mb-8">
-            Start with our free tier and upgrade when you need more power.
+            The beta is free. Request access and we will get in touch.
           </p>
-          <Link
-            to="/signup"
+          <a
+            href="/#request-access"
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-slate bg-white rounded-button hover:bg-light-soft transition-colors"
           >
-            Create Free Account
-          </Link>
+            Request beta access
+          </a>
         </div>
       </section>
     </PublicLayout>

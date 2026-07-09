@@ -9,7 +9,7 @@ import PublicLayout from '../components/PublicLayout';
  * Germany/EU, no invented company details, no fake team size.
  */
 
-const GREEN = '#336600';
+const GREEN = '#2FA4A9'; // Ion teal (brand anchor; see docs/BRAND_COLOR_DECISION.md)
 const GRAY = '#606060';
 
 function ValueCard({ title, text }) {
