@@ -223,8 +223,14 @@ export default function Landing() {
 
   const useCases = ['Excel chaos to reporting database', 'Internal dashboard from scattered files', 'CRUD app for operational records', 'Docs from messy business data', 'AI / RAG / search preparation', 'Project, customer, product data cleanup'];
 
-  const betaAvailable = ['Local file upload', 'Inventory scan', 'Quality findings', 'Architecture recommendations', 'Dashboard / CRUD / chatbot / report', 'Quality validation', 'Docker export / self-deploy', 'Data-rights requests'];
-  const betaPreview = ['Cloud connector execution', 'Managed hosting', 'Paid billing', 'Fully automated deletion/export'];
+  const testNowCards = [
+    ['Local uploads', 'Upload files, spreadsheets, folders, exports, and business documents for analysis.'],
+    ['Structure recommendations', 'Get inventory scans, quality findings, and database/application architecture recommendations.'],
+    ['Generated outputs', 'Generate dashboards, CRUD apps, chatbot/RAG experiences, reports, and documentation.'],
+    ['Validation and export', 'Run quality checks, then export a Docker/self-deploy package.'],
+    ['Data-rights requests', 'Request data export or deletion through an audited beta workflow.'],
+  ];
+  const stillInPreview = ['Cloud connector execution', 'Managed SKatalyst hosting', 'Paid billing', 'Fully automated deletion/export'];
 
   return (
     <PublicLayout>
@@ -334,29 +340,39 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ============ 7. BETA SCOPE (compact badges) ============ */}
+      {/* ============ 7. WHAT YOU CAN TEST NOW ============ */}
       <section id="beta-scope" className="py-14 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Beta scope, stated plainly" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="rounded-2xl border-2 p-5 bg-white" style={{ borderColor: '#D7DEE3' }} aria-label="Available in beta">
-              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: GREEN }}>Available in beta</p>
-              <ul className="flex flex-wrap gap-2">
-                {betaAvailable.map((b) => (
-                  <li key={b} className="px-2.5 py-1 rounded-md text-xs font-semibold text-text-primary" style={{ backgroundColor: 'rgba(51,102,0,0.08)' }}>{b}</li>
+          <SectionTitle
+            title="What you can test now"
+            sub="SKatalyst is being prepared for beta around an export-first workflow. Start with local files, generate useful outputs, validate them, and leave with assets you can own."
+          />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" aria-label="Available in the beta">
+            {testNowCards.map(([title, caption]) => (
+              <div key={title} className="rounded-xl border border-light-border bg-white p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(51,102,0,0.1)' }} aria-hidden="true">
+                    <svg className="w-3 h-3" fill="none" stroke={GREEN} strokeWidth={3} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  </span>
+                  <h3 className="font-semibold text-text-primary text-sm">{title}</h3>
+                </div>
+                <p className="text-sm" style={{ color: GRAY }}>{caption}</p>
+              </div>
+            ))}
+
+            {/* Still in Preview: compact, neutral, sits in the same grid */}
+            <div className="rounded-xl border border-dashed p-5" style={{ borderColor: '#B9B9B9', backgroundColor: '#FAFAFA' }} aria-label="Still in Preview">
+              <h3 className="font-semibold text-sm mb-2" style={{ color: GRAY }}>Still in Preview</h3>
+              <ul className="flex flex-wrap gap-1.5 mb-3">
+                {stillInPreview.map((item) => (
+                  <li key={item} className="px-2 py-0.5 rounded text-xs font-medium" style={{ backgroundColor: 'rgba(96,96,96,0.08)', color: GRAY }}>{item}</li>
                 ))}
               </ul>
-            </div>
-            <div className="rounded-2xl border-2 border-dashed p-5" style={{ borderColor: '#B9B9B9' }} aria-label="Preview, not yet launched">
-              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: GRAY }}>Preview / not yet launched</p>
-              <ul className="flex flex-wrap gap-2">
-                {betaPreview.map((b) => (
-                  <li key={b} className="px-2.5 py-1 rounded-md text-xs font-semibold" style={{ backgroundColor: 'rgba(96,96,96,0.08)', color: GRAY }}>{b}</li>
-                ))}
-              </ul>
-              <p className="mt-3 text-xs" style={{ color: GRAY }}>
-                Details: <Link to="/beta-limitations" className="underline">beta limitations</Link>.
+              <p className="text-xs mb-2" style={{ color: GRAY }}>
+                These are intentionally not shown as launched until they pass production, billing, and operational checks.
               </p>
+              <Link to="/beta-limitations" className="text-xs font-semibold underline" style={{ color: ION }}>See beta limitations</Link>
             </div>
           </div>
         </div>

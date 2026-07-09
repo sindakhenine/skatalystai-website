@@ -29,12 +29,13 @@ export default function BetaLimitations() {
           ],
         },
         {
-          heading: 'Not available yet (do not plan around these)',
+          heading: 'Not available yet, and why (do not plan around these)',
           list: [
-            'Cloud connector pipeline execution (Drive/S3/Azure/databases): connect and browse works; running the pipeline from cloud sources is disabled until our verification completes.',
-            'Paid plans and billing: disabled; nothing can charge you.',
-            'Always-on managed production hosting, custom domains, public app URLs.',
-            'Platform API keys, in-app notifications, uptime SLA, status page (planned; use the support page for incidents).',
+            'Cloud connector execution: Preview until each connector can browse, read real file bytes, refresh tokens, handle permissions, and run through the full SKatalyst pipeline with tenant isolation. Connecting and browsing already works.',
+            'Managed hosting: not launched until generated apps can be hosted with isolated runtimes, logs, stop/delete, rollback, quotas, and monitoring.',
+            'Paid billing: disabled until Stripe live products, webhooks, plan limits, invoices, failure handling, and billing portal are configured and tested. Nothing can charge you today.',
+            'Fully automated deletion/export: request-based during beta. Full automation requires safe tenant-scoped export, deletion, anonymization, credential cleanup, and audit retention.',
+            'Also planned, not present: custom domains and public app URLs, platform API keys, in-app notifications, uptime SLA, and a status page (use the support page for incidents).',
           ],
         },
         {
