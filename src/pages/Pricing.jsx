@@ -164,7 +164,7 @@ export default function Pricing() {
       period: null,
       description: 'For large-scale deployments',
       features: [
-        'Unlimited everything',
+        'Custom limits',
         t('pricing.features.onPremise'),
         'Custom integrations',
         t('pricing.features.dedicatedSupport'),
@@ -178,9 +178,9 @@ export default function Pricing() {
   ];
 
   const comparisonFeatures = [
-    { feature: 'Data processing', free: '1 GB', pro: '25 GB', business: '100 GB', enterprise: 'Unlimited' },
-    { feature: 'Runs per month', free: '5', pro: '50', business: 'Unlimited', enterprise: 'Unlimited' },
-    { feature: 'Connectors', free: '2', pro: '10', business: 'Unlimited', enterprise: 'Unlimited' },
+    { feature: 'Data processing', free: '1 GB', pro: '25 GB', business: '100 GB', enterprise: 'Custom' },
+    { feature: 'Runs per month', free: '5', pro: '50', business: 'High volume', enterprise: 'Custom' },
+    { feature: 'Connectors', free: '2', pro: '10', business: 'All available', enterprise: 'All available' },
     { feature: 'Theme detection', free: true, pro: true, business: true, enterprise: true },
     { feature: 'Advanced AI analysis', free: false, pro: true, business: true, enterprise: true },
     { feature: 'Custom output formats', free: false, pro: true, business: true, enterprise: true },
@@ -202,6 +202,14 @@ export default function Pricing() {
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
             {t('pricing.subtitle')}
           </p>
+          <div className="mt-6 inline-block bg-light-surface border border-light-border rounded-xl px-6 py-3 text-left">
+            <p className="text-sm font-semibold text-text-primary">
+              {t('pricing.betaOnly.title', 'Beta access only — billing is not active yet.')}
+            </p>
+            <p className="text-sm text-text-secondary mt-0.5">
+              {t('pricing.betaOnly.description', 'During the beta, everyone uses the Free plan at no cost. Paid plans shown below are planned and cannot be purchased yet.')}
+            </p>
+          </div>
         </div>
       </section>
 
@@ -210,7 +218,7 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {plans.map((plan) => (
-              <PlanCard key={plan.name} {...plan} comingSoonLabel={t('pricing.comingSoon')} />
+              <PlanCard key={plan.name} {...plan} comingSoonLabel={t('pricing.comingSoon', 'Coming Soon')} />
             ))}
           </div>
         </div>

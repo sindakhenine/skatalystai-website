@@ -125,9 +125,9 @@
     "features": {
       "dataProcessing": "{{amount}} data processing",
       "runsPerMonth": "{{count}} runs per month",
-      "unlimitedRuns": "Unlimited runs",
+      "unlimitedRuns": "High-volume runs",
       "connectors": "{{count}} data source connectors",
-      "unlimitedConnectors": "Unlimited connectors",
+      "unlimitedConnectors": "All available connectors",
       "basicTheme": "Basic theme detection",
       "advancedAI": "Advanced AI analysis",
       "prioritySupport": "Priority support",
@@ -656,8 +656,8 @@
     "proFeature2": "50 runs per month",
     "proFeature3": "10 data connectors",
     "businessFeature1": "100 GB data processing",
-    "businessFeature2": "Unlimited runs",
-    "businessFeature3": "Unlimited connectors",
+    "businessFeature2": "High-volume runs",
+    "businessFeature3": "All available connectors",
     "upgradeNow": "Upgrade Now",
     "maybeLater": "Maybe later",
     "resetInfo": "Free tier limits reset at the start of each billing cycle."
