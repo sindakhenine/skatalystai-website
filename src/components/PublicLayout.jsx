@@ -170,14 +170,14 @@ function PublicFooter() {
             <h3 className="text-sm font-semibold text-text-primary mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-                  {t('footer.documentation')}
-                </a>
+                <Link to="/beta-limitations" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.betaLimitations', 'Beta Limitations')}
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-                  {t('footer.apiReference')}
-                </a>
+                <Link to="/contact" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.support', 'Contact & Support')}
+                </Link>
               </li>
             </ul>
           </div>
@@ -211,6 +211,26 @@ function PublicFooter() {
               <li>
                 <Link to="/legal/terms" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
                   {t('footer.terms')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/data-rights" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.dataRights', 'Data Rights')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/security" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.security', 'Security')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/subprocessors" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.subprocessors', 'Subprocessors')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/impressum" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.impressum', 'Impressum')}
                 </Link>
               </li>
               <li>

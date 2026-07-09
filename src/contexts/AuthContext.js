@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+// Private-beta gate: blocks the OAuth redirect itself when public login is off.
+import { PUBLIC_LOGIN_ENABLED, PRIVATE_BETA_ROUTE } from '../config/appConfig';
 
 const API_BASE = `${process.env.REACT_APP_API_URL || 'http://localhost:3001'}/api`;
 
@@ -188,32 +190,48 @@ export function AuthProvider({ children }) {
     return () => clearInterval(interval);
   }, [accessToken, refreshToken]);
 
+  // PRIVATE-BETA GATE: final safety net. The three login functions below are
+  // what actually redirect the browser to the OAuth provider. If public login
+  // is disabled (production), short-circuit to the Coming Soon screen so that
+  // even a button wired directly to these functions can never reach the
+  // provider. Returns true if the redirect was blocked.
+  const blockIfPrivateBeta = useCallback(() => {
+    if (!PUBLIC_LOGIN_ENABLED) {
+      window.location.href = PRIVATE_BETA_ROUTE;
+      return true;
+    }
+    return false;
+  }, []);
+
   // Login with Google - session duration based on rememberMe checkbox
   const loginWithGoogle = useCallback((accountType = 'personal', rememberMe = false) => {
+    if (blockIfPrivateBeta()) return;
     const params = new URLSearchParams({
       accountType,
       rememberMe: rememberMe ? 'true' : 'false' // 30 days if checked, 1 day if not
     });
     window.location.href = `${API_BASE}/auth/google?${params.toString()}`;
-  }, []);
+  }, [blockIfPrivateBeta]);
 
   // Login with Microsoft - session duration based on rememberMe checkbox
   const loginWithMicrosoft = useCallback((accountType = 'personal', rememberMe = false) => {
+    if (blockIfPrivateBeta()) return;
     const params = new URLSearchParams({
       accountType,
       rememberMe: rememberMe ? 'true' : 'false' // 30 days if checked, 1 day if not
     });
     window.location.href = `${API_BASE}/auth/microsoft?${params.toString()}`;
-  }, []);
+  }, [blockIfPrivateBeta]);
 
   // Login with GitHub - session duration based on rememberMe checkbox
   const loginWithGithub = useCallback((accountType = 'personal', rememberMe = false) => {
+    if (blockIfPrivateBeta()) return;
     const params = new URLSearchParams({
       accountType,
       rememberMe: rememberMe ? 'true' : 'false' // 30 days if checked, 1 day if not
     });
     window.location.href = `${API_BASE}/auth/github?${params.toString()}`;
-  }, []);
+  }, [blockIfPrivateBeta]);
 
   // Logout
   const logout = useCallback(async () => {

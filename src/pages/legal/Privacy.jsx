@@ -1,115 +1,66 @@
 import React from 'react';
-import PublicLayout from '../../components/PublicLayout';
+import LegalPageShell from './LegalPageShell';
 
+/**
+ * Privacy Policy — written to match what the product ACTUALLY does
+ * (verified against the codebase; the previous boilerplate falsely claimed
+ * "we do not permanently store your raw data files" — uploads DO persist
+ * until deleted, and this page now says so).
+ */
 export default function Privacy() {
   return (
-    <PublicLayout>
-      <div className="py-16 bg-light-surface">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-text-primary mb-2">Privacy Policy</h1>
-          <p className="text-text-secondary mb-8">Last updated: December 2024</p>
-
-          <div className="prose prose-slate max-w-none">
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">1. Introduction</h2>
-              <p className="text-text-secondary mb-4">
-                SkatalystAI ("we", "our", or "us") is committed to protecting your privacy.
-                This Privacy Policy explains how we collect, use, disclose, and safeguard your
-                information when you use our service.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">2. Information We Collect</h2>
-              <h3 className="text-lg font-medium text-text-primary mb-2">Account Information</h3>
-              <p className="text-text-secondary mb-4">
-                When you create an account, we collect your name, email address, and any other
-                information you provide during registration.
-              </p>
-              <h3 className="text-lg font-medium text-text-primary mb-2">Usage Data</h3>
-              <p className="text-text-secondary mb-4">
-                We collect information about how you use our service, including the features you
-                use, the time spent on the platform, and your interactions with our interface.
-              </p>
-              <h3 className="text-lg font-medium text-text-primary mb-2">Data You Process</h3>
-              <p className="text-text-secondary mb-4">
-                When you use SkatalystAI to process your data, we temporarily access your files
-                to perform analysis. We do not permanently store your raw data files.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">3. How We Use Your Information</h2>
-              <ul className="list-disc list-inside text-text-secondary space-y-2">
-                <li>To provide and maintain our service</li>
-                <li>To process your data according to your instructions</li>
-                <li>To improve and optimize our platform</li>
-                <li>To communicate with you about updates and support</li>
-                <li>To comply with legal obligations</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">4. Data Security</h2>
-              <p className="text-text-secondary mb-4">
-                We implement appropriate technical and organizational measures to protect your
-                data, including encryption in transit and at rest, access controls, and regular
-                security assessments.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">5. Data Retention</h2>
-              <p className="text-text-secondary mb-4">
-                We retain your account information for as long as your account is active.
-                Processed data and analysis results are retained according to your subscription
-                plan settings. You can request deletion of your data at any time.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">6. Your Rights</h2>
-              <p className="text-text-secondary mb-4">
-                Depending on your location, you may have the following rights:
-              </p>
-              <ul className="list-disc list-inside text-text-secondary space-y-2">
-                <li>Right to access your personal data</li>
-                <li>Right to rectify inaccurate data</li>
-                <li>Right to delete your data</li>
-                <li>Right to data portability</li>
-                <li>Right to object to processing</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">7. Third-Party Services</h2>
-              <p className="text-text-secondary mb-4">
-                We use third-party services for authentication (Google OAuth), hosting, and
-                analytics. These services have their own privacy policies governing their use
-                of your data.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">8. Changes to This Policy</h2>
-              <p className="text-text-secondary mb-4">
-                We may update this Privacy Policy from time to time. We will notify you of any
-                changes by posting the new policy on this page and updating the "Last updated" date.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-4">9. Contact Us</h2>
-              <p className="text-text-secondary">
-                If you have questions about this Privacy Policy, please contact us at:{' '}
-                <a href="mailto:privacy@skatalystai.com" className="text-ion hover:opacity-80 transition-opacity">
-                  privacy@skatalystai.com
-                </a>
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </PublicLayout>
+    <LegalPageShell
+      title="Privacy Policy"
+      updated="July 2026"
+      intro="SKatalyst AI ('we', 'us') analyzes business data you choose to upload or connect and generates applications from it. This policy describes exactly what we store, for how long, and how you can get it out or have it removed."
+      sections={[
+        {
+          heading: 'Data we collect and store',
+          list: [
+            'Account identity: your name, email address, and avatar from the OAuth provider you sign in with (Google, Microsoft, or GitHub). We never see your password.',
+            'Uploaded files: files you upload are STORED in your workspace until you delete them, delete the run or project they belong to, or an approved deletion request removes them. They are never shared across workspaces.',
+            'Generated outputs: analysis results, dashboards, generated application code, and export packages derived from your data. Export packages expire after 7 days.',
+            'Connector tokens: if you connect an external service (e.g. Google Drive, S3), we store the access credentials encrypted (AES-256-GCM). They are destroyed when you disconnect the connector or your workspace is deleted.',
+            'Logs and audit events: security- and business-relevant actions (logins, runs, exports, admin actions, data-rights requests) with timestamps and request identifiers. The audit trail is append-only and retained for compliance.',
+            'Support and data-rights requests: the content of reports and requests you file in-app.',
+            'Billing data: not collected today. If paid plans launch, payment details will be processed by Stripe; we will not store card numbers.',
+          ],
+        },
+        {
+          heading: 'What we do NOT do',
+          list: [
+            'We do not sell your data or use it for advertising.',
+            'We do not train machine-learning models on your uploaded content.',
+            'We do not read your connected cloud accounts beyond the folders/buckets you explicitly select.',
+            'Generated chat/RAG features use YOUR OWN model API key if you provide one (bring your own key); we do not silently run your documents through our own LLM accounts.',
+          ],
+        },
+        {
+          heading: 'Retention',
+          body: 'Uploads and analysis results stay until you delete them or your deletion request is processed. Generated app packages expire after 7 days. Hosted preview runtimes self-destruct within minutes to hours. Data exports you request are downloadable for 7 days. Audit logs are retained. Backups age out on the backup schedule; deleted data is not purged from backups retroactively.',
+        },
+        {
+          heading: 'Your rights: export, deletion, correction',
+          body: [
+            'Export: request it in Settings, Data & Privacy. Exports are generated automatically and downloadable for 7 days. They contain your workspace records and file listings, never credentials.',
+            'Deletion: request account or workspace deletion in Settings. Deletions are reviewed and executed by our team (deliberately not instant). Uploaded file bytes, generated artifacts, connector credentials, and workspace records are removed; your account identity is anonymized when the account is fully closed. You will be contacted at your account email.',
+            'Correction: edit account data in Settings or contact us.',
+            'Target processing time during beta: 7 days, at most 30 days.',
+          ],
+        },
+        {
+          heading: 'Where data lives and who processes it',
+          body: 'Hosting on Google Cloud (europe-west1, EU) and Firebase Hosting; database on Neon (PostgreSQL). The full, current list of subprocessors, including which are only planned, is on our Subprocessors page.',
+        },
+        {
+          heading: 'EU / Germany',
+          body: 'SKatalyst is operated from Germany and aims to comply with the GDPR. The legal basis for processing is contract performance (providing the service you signed up for) and legitimate interest (security logging). You may raise complaints with your local data protection authority.',
+        },
+        {
+          heading: 'Contact',
+          body: 'contact@skatalystai.com. We answer data-rights mail sent from the address your account is registered under.',
+        },
+      ]}
+    />
   );
 }

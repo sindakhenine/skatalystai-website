@@ -8,12 +8,21 @@ import { saveAs } from 'file-saver';
 import logo from './assets/logo.png';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ComingSoon from './pages/ComingSoon';
+// Private-beta gate: single reversible flag controlling public login access.
+import { PUBLIC_LOGIN_ENABLED, PRIVATE_BETA_ROUTE } from './config/appConfig';
 import Landing from './pages/Landing';
 import Pricing from './pages/Pricing';
 import About from './pages/About';
 import Privacy from './pages/legal/Privacy';
 import Terms from './pages/legal/Terms';
 import Disclaimer from './pages/legal/Disclaimer';
+import DataRights from './pages/legal/DataRights';
+import SecurityPage from './pages/legal/Security';
+import Subprocessors from './pages/legal/Subprocessors';
+import BetaLimitations from './pages/legal/BetaLimitations';
+import ContactPage from './pages/legal/Contact';
+import Impressum from './pages/legal/Impressum';
 import Billing from './pages/Billing';
 import Beta from './pages/Beta';
 import RunReport from './pages/RunReport';
@@ -3962,21 +3971,57 @@ function AppShell({ children }) {
 function App() {
   return (
     <Routes>
-      {/* Public marketing pages */}
+      {/* Public marketing pages.
+          PRIVATE-BETA GATE: in production (PUBLIC_LOGIN_ENABLED === false) the
+          homepage shows the private beta landing instead of the full marketing
+          site, so visitors from X / search see a clean "coming soon" message and
+          none of the unfinished product surface. Local dev still shows the full
+          Landing. Flip the flag to restore the marketing homepage. */}
+      {/* Public homepage: ALWAYS the clear marketing landing (request-access
+          CTA works while login stays gated). ComingSoon still intercepts the
+          login/signup/app entry points below while the beta gate is closed. */}
       <Route path="/" element={<Landing />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/about" element={<About />} />
       <Route path="/legal/privacy" element={<Privacy />} />
       <Route path="/legal/terms" element={<Terms />} />
       <Route path="/legal/disclaimer" element={<Disclaimer />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/data-rights" element={<DataRights />} />
+      <Route path="/security" element={<SecurityPage />} />
+      <Route path="/subprocessors" element={<Subprocessors />} />
+      <Route path="/beta-limitations" element={<BetaLimitations />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/support" element={<ContactPage />} />
+      <Route path="/impressum" element={<Impressum />} />
 
       {/* Public preview page (no auth required) */}
       <Route path="/preview/:token" element={<PreviewPage />} />
 
-      {/* Auth routes */}
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/verify-email" element={<VerifyEmail />} />
+      {/* Private Beta / Coming Soon screen (always available so it can be linked
+          to directly and used as the redirect target while login is gated). */}
+      <Route path={PRIVATE_BETA_ROUTE} element={<ComingSoon />} />
+
+      {/* Auth routes.
+          PRIVATE-BETA GATE: while PUBLIC_LOGIN_ENABLED is false (production),
+          every auth entry point renders the Coming Soon screen instead of the
+          real login / sign-up flow. Because all header buttons, landing/pricing
+          CTAs, mobile menu links and "Get Started" buttons navigate to /login
+          or /signup, gating these routes covers every navigation-based entry
+          point in one place. Flip the flag to restore the normal flow. */}
+      <Route
+        path="/login"
+        element={PUBLIC_LOGIN_ENABLED ? <Login /> : <ComingSoon />}
+      />
+      <Route
+        path="/signup"
+        element={PUBLIC_LOGIN_ENABLED ? <Signup /> : <ComingSoon />}
+      />
+      <Route
+        path="/verify-email"
+        element={PUBLIC_LOGIN_ENABLED ? <VerifyEmail /> : <ComingSoon />}
+      />
 
       {/* Protected app routes */}
       <Route
