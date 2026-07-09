@@ -4,31 +4,60 @@ import { useTranslation } from 'react-i18next';
 // =============================================================================
 // BetaSignupForm
 // -----------------------------------------------------------------------------
-// Public "notify me when the October beta opens" email-capture form. Posts to
-// the backend POST /api/beta-signup endpoint, which saves the address to the
-// launch waitlist and (once email is configured) sends a welcome confirmation.
+// Public beta-waitlist email-capture form. Posts to the backend
+// POST /api/beta-signup endpoint, which saves the address to the launch
+// waitlist and (once email is configured) sends a welcome confirmation.
 //
-// Self-contained: resolves the API base the same way the rest of the app does
-// (REACT_APP_API_URL) so it works in dev and production without extra wiring.
+// API base resolution: REACT_APP_API_URL (set in .env.development /
+// .env.production; see .env.example). Falls back to the local backend so the
+// form works out of the box in dev.
+//
+// Error handling is deliberately specific but safe: no stack traces, no raw
+// server output, and NEVER a fake success. Each failure mode gets an honest,
+// actionable message. See docs/BETA_SIGNUP_FORM_DEBUG.md for manual tests.
 // =============================================================================
 
 const API_BASE = `${process.env.REACT_APP_API_URL || 'http://localhost:3001'}/api`;
 
-// Mirror of the backend's pragmatic check — just to give instant feedback.
+// Mirror of the backend's pragmatic check, for instant client-side feedback.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const CONTACT_EMAIL = 'contact@skatalystai.com';
+
+// One place for every user-facing failure message.
+const ERROR_MESSAGES = {
+  invalidEmail: 'Enter a valid email address.',
+  rateLimited: 'Too many attempts. Please try again in a moment.',
+  serviceUnreachable: `The beta request service is not reachable. Please try again later or contact ${CONTACT_EMAIL}.`,
+  networkBlocked: `The request could not reach the beta service. Please check your connection and try again, or email ${CONTACT_EMAIL}.`,
+};
+
+/**
+ * Map a non-OK HTTP response to a safe, useful message.
+ * Prefers the backend's own JSON `message` (it is written for end users);
+ * falls back to honest generic wording when the body is not usable JSON
+ * (proxy/hosting error pages, wrong deployment, etc.).
+ */
+function messageForResponse(res, data) {
+  if (res.status === 400) return data.message || ERROR_MESSAGES.invalidEmail;
+  if (res.status === 429) return data.message || ERROR_MESSAGES.rateLimited;
+  if (data && typeof data.message === 'string' && data.message) return data.message;
+  return ERROR_MESSAGES.serviceUnreachable;
+}
 
 export default function BetaSignupForm() {
   const { i18n } = useTranslation();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [message, setMessage] = useState('');
+  const [alreadySubscribed, setAlreadySubscribed] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const trimmed = email.trim();
     if (!EMAIL_RE.test(trimmed)) {
       setStatus('error');
-      setMessage('Please enter a valid email address.');
+      setMessage(ERROR_MESSAGES.invalidEmail);
       return;
     }
 
@@ -38,24 +67,27 @@ export default function BetaSignupForm() {
       const res = await fetch(`${API_BASE}/beta-signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: trimmed, locale: i18n?.language || null }),
+        body: JSON.stringify({
+          email: trimmed,
+          locale: i18n?.language || null,
+          source: 'website',
+        }),
       });
 
+      const data = await res.json().catch(() => ({}));
+
       if (res.ok) {
+        setAlreadySubscribed(Boolean(data.alreadySubscribed));
         setStatus('success');
         return;
       }
 
-      const data = await res.json().catch(() => ({}));
       setStatus('error');
-      setMessage(
-        res.status === 429
-          ? 'Too many attempts. Please try again in a moment.'
-          : data.message || 'Something went wrong. Please try again.'
-      );
+      setMessage(messageForResponse(res, data));
     } catch {
+      // fetch rejected: server down, DNS failure, or a CORS-blocked response.
       setStatus('error');
-      setMessage('Network error. Please check your connection and try again.');
+      setMessage(ERROR_MESSAGES.networkBlocked);
     }
   };
 
@@ -67,11 +99,22 @@ export default function BetaSignupForm() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <p className="text-base font-medium text-text-primary">You&rsquo;re on the list!</p>
-        <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-          We&rsquo;ll email you the moment your access opens.
-          Check your inbox for a confirmation.
-        </p>
+        {alreadySubscribed ? (
+          <>
+            <p className="text-base font-medium text-text-primary">You are already on the beta list.</p>
+            <p className="mt-2 text-sm text-text-secondary leading-relaxed">
+              We have your address and will email you the moment your access opens.
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-base font-medium text-text-primary">You&rsquo;re on the list!</p>
+            <p className="mt-2 text-sm text-text-secondary leading-relaxed">
+              We&rsquo;ll email you the moment your access opens.
+              Check your inbox for a confirmation.
+            </p>
+          </>
+        )}
       </div>
     );
   }
@@ -105,7 +148,7 @@ export default function BetaSignupForm() {
       </div>
 
       {status === 'error' && message && (
-        <p className="mt-3 text-sm text-red-600 text-left">{message}</p>
+        <p className="mt-3 text-sm text-red-600 text-left" role="alert">{message}</p>
       )}
 
       <p className="mt-3 text-xs text-text-secondary text-left">
