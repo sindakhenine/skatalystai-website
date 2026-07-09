@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { languages } from '../i18n';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-lockup.png';
 
 // Icons for theme and language
 const SunIcon = () => (
@@ -64,11 +64,14 @@ function PublicHeader() {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="SkatalystAI" className="h-20 w-auto" />
+            <img src={logo} alt="SKatalyst AI" className="h-9 md:h-10 w-auto" />
           </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
+            <a href="/#how-it-works" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">How it works</a>
+            <a href="/#blueprint" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">Outputs</a>
+            <a href="/#beta-scope" className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors">Beta scope</a>
             <NavLink to="/pricing">{t('nav.billing')}</NavLink>
             <NavLink to="/about">About</NavLink>
           </nav>
@@ -121,12 +124,6 @@ function PublicHeader() {
 
             <div className="w-px h-6 bg-light-border dark:bg-gray-700 mx-1" />
 
-            <Link
-              to="/login"
-              className="text-sm font-medium text-text-secondary dark:text-gray-300 hover:text-text-primary dark:hover:text-white transition-colors px-3 py-2"
-            >
-              {t('common.signIn', 'Sign in')}
-            </Link>
             {/* Beta-safe primary CTA: waitlist, not signup (signup is gated). */}
             <a
               href="/#request-access"
@@ -161,6 +158,11 @@ function PublicFooter() {
               <li>
                 <Link to="/about" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
                   {t('footer.aboutUs')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+                  {t('footer.betaTesterSignIn', 'Beta tester sign in')}
                 </Link>
               </li>
             </ul>

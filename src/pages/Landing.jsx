@@ -293,7 +293,7 @@ export default function Landing() {
       </section>
 
       {/* ============ 4. HOW IT WORKS (compact) ============ */}
-      <section className="py-14" style={{ backgroundColor: '#F5F8F8' }}>
+      <section id="how-it-works" className="py-14" style={{ backgroundColor: '#F5F8F8' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Five steps, one run" />
           <ol className="flex flex-col md:flex-row items-stretch justify-between gap-3">
@@ -335,7 +335,7 @@ export default function Landing() {
       </section>
 
       {/* ============ 7. BETA SCOPE (compact badges) ============ */}
-      <section className="py-14 bg-white">
+      <section id="beta-scope" className="py-14 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Beta scope, stated plainly" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
