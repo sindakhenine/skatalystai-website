@@ -51,6 +51,7 @@ export default function BetaSignupForm() {
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [message, setMessage] = useState('');
   const [alreadySubscribed, setAlreadySubscribed] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -78,6 +79,8 @@ export default function BetaSignupForm() {
 
       if (res.ok) {
         setAlreadySubscribed(Boolean(data.alreadySubscribed));
+        // Only promise a confirmation email when the backend actually sent one.
+        setEmailSent(Boolean(data.emailSent));
         setStatus('success');
         return;
       }
@@ -101,17 +104,17 @@ export default function BetaSignupForm() {
         </div>
         {alreadySubscribed ? (
           <>
-            <p className="text-base font-medium text-text-primary">You are already on the beta list.</p>
+            <p className="text-base font-medium text-text-primary">You&rsquo;re already on the beta list.</p>
             <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-              We have your address and will email you the moment your access opens.
+              We&rsquo;ll email you when access opens.
             </p>
           </>
         ) : (
           <>
-            <p className="text-base font-medium text-text-primary">You&rsquo;re on the list!</p>
+            <p className="text-base font-medium text-text-primary">You&rsquo;re on the beta list.</p>
             <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-              We&rsquo;ll email you the moment your access opens.
-              Check your inbox for a confirmation.
+              We&rsquo;ll email you when access opens.
+              {emailSent && ' A confirmation email is on its way; check your inbox.'}
             </p>
           </>
         )}
