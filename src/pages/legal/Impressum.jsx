@@ -18,28 +18,28 @@ export default function Impressum() {
         {
           heading: 'Anbieter / Service provider',
           list: [
-            'Name / legal form: [OWNER TO FILL — e.g. full personal name for a sole proprietorship, or company name + legal form (GmbH/UG) once registered]',
-            'Address (ladungsfähige Anschrift, no P.O. box): [OWNER TO FILL — street, number, postal code, city, Germany]',
-            'Legal representative (if a company): [OWNER TO FILL — Geschäftsführer name, or remove this line for a sole proprietorship]',
+            'Name / legal form: [OWNER TO FILL: e.g. full personal name for a sole proprietorship, or company name + legal form (GmbH/UG) once registered]',
+            'Address (ladungsfähige Anschrift, no P.O. box): [OWNER TO FILL: street, number, postal code, city, Germany]',
+            'Legal representative (if a company): [OWNER TO FILL: Geschäftsführer name, or remove this line for a sole proprietorship]',
           ],
         },
         {
           heading: 'Kontakt / Contact',
           list: [
             'E-mail: contact@skatalystai.com',
-            'Phone: [OWNER TO FILL — a reachable number is expected under § 5 DDG]',
+            'Phone: [OWNER TO FILL: a reachable number is expected under § 5 DDG]',
           ],
         },
         {
           heading: 'Register & tax details',
           list: [
-            'Commercial register entry (Handelsregister): [OWNER TO FILL — court + HRB number, ONLY if registered; otherwise state "not registered / sole proprietorship"]',
-            'VAT ID (USt-IdNr. per § 27a UStG): [OWNER TO FILL — only if one has been issued; otherwise remove this line]',
+            'Commercial register entry (Handelsregister): [OWNER TO FILL: court + HRB number, ONLY if registered; otherwise state "not registered / sole proprietorship"]',
+            'VAT ID (USt-IdNr. per § 27a UStG): [OWNER TO FILL: only if one has been issued; otherwise remove this line]',
           ],
         },
         {
           heading: 'Verantwortlich für den Inhalt / Responsible for content',
-          body: '[OWNER TO FILL — name and address of the person responsible per § 18 Abs. 2 MStV, typically the owner]',
+          body: '[OWNER TO FILL: name and address of the person responsible per § 18 Abs. 2 MStV, typically the owner]',
         },
         {
           heading: 'EU dispute resolution / Verbraucherstreitbeilegung',

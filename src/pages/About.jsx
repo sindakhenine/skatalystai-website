@@ -32,7 +32,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">About SKatalyst AI</h1>
           <p className="text-xl" style={{ color: GRAY }}>
-            From messy business data to organized systems — without vendor lock-in.
+            From messy business data to organized systems, without vendor lock-in.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function About() {
           <p className="mb-4 leading-relaxed" style={{ color: GRAY }}>
             SKatalyst AI was created to solve a common business problem: valuable data is
             everywhere, but rarely organized enough to become useful software. Teams have
-            spreadsheets, folders, PDFs, exports, and notes — but turning that into a database,
+            spreadsheets, folders, PDFs, exports, and notes. But turning that into a database,
             dashboard, app, or AI-ready knowledge system usually requires consultants, developers,
             and weeks of translation.
           </p>

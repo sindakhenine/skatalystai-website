@@ -44,7 +44,7 @@ function EngineRow({ children }) {
 
 function OutputRow({ children }) {
   return (
-    <li className="flex items-center gap-2 px-2.5 py-1.5 rounded-md text-xs font-semibold bg-white text-text-primary border" style={{ borderColor: 'rgba(51,102,0,0.35)' }}>
+    <li className="flex items-center gap-2 px-2.5 py-1.5 rounded-md text-xs font-semibold bg-white text-text-primary border border-light-divider">
       <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke={GREEN} strokeWidth={3} viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
       </svg>
@@ -101,7 +101,7 @@ function ProductMap() {
       <FlowArrow />
 
       {/* OWNED SYSTEM (green) */}
-      <div className="flex-1 max-w-sm mx-auto md:mx-0 rounded-2xl p-4 border-2" style={{ borderColor: GREEN, backgroundColor: 'rgba(51,102,0,0.04)' }} aria-label="Your owned system">
+      <div className="flex-1 max-w-sm mx-auto md:mx-0 rounded-2xl p-4 border-2 bg-white" style={{ borderColor: '#D7DEE3' }} aria-label="Your owned system">
         <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: GREEN }}>Your owned system</p>
         <ul className="space-y-1.5">
           {['Database schema', 'Documentation', 'Dashboard', 'CRUD app', 'Chatbot / RAG', 'Report', 'Docker export'].map((o) => (
@@ -236,7 +236,7 @@ export default function Landing() {
             <span style={{ color: ION }}>structured databases, dashboards, and apps you own.</span>
           </h1>
           <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: GRAY }}>
-            From messy business data to organized systems — without vendor lock-in.
+            From messy business data to organized systems, without vendor lock-in.
           </p>
 
           <ProductMap />
@@ -339,7 +339,7 @@ export default function Landing() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Beta scope, stated plainly" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="rounded-2xl border-2 p-5" style={{ borderColor: GREEN }} aria-label="Available in beta">
+            <div className="rounded-2xl border-2 p-5 bg-white" style={{ borderColor: '#D7DEE3' }} aria-label="Available in beta">
               <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: GREEN }}>Available in beta</p>
               <ul className="flex flex-wrap gap-2">
                 {betaAvailable.map((b) => (
@@ -365,7 +365,7 @@ export default function Landing() {
       {/* ============ 8. OWNERSHIP BAND ============ */}
       <section className="py-14" style={{ backgroundColor: '#2F3A44' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <svg className="w-8 h-8 mx-auto mb-4" fill="none" stroke={GREEN} strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true" style={{ filter: 'brightness(2.2)' }}>
+          <svg className="w-8 h-8 mx-auto mb-4 text-white/80" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <h2 className="text-3xl md:text-4xl font-bold text-white">You leave with assets, not a subscription hostage.</h2>

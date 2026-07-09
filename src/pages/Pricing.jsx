@@ -86,7 +86,7 @@ function ComparisonRow({ feature, free, pro, business, enterprise }) {
       return <CheckIcon />;
     }
     if (value === false) {
-      return <span className="text-light-border">—</span>;
+      return <span className="text-light-border">-</span>;
     }
     return <span className="text-sm text-text-secondary">{value}</span>;
   };
@@ -204,7 +204,7 @@ export default function Pricing() {
           </p>
           <div className="mt-6 inline-block bg-light-surface border border-light-border rounded-xl px-6 py-3 text-left">
             <p className="text-sm font-semibold text-text-primary">
-              {t('pricing.betaOnly.title', 'Beta access only — billing is not active yet.')}
+              {t('pricing.betaOnly.title', 'Beta access only: billing is not active yet.')}
             </p>
             <p className="text-sm text-text-secondary mt-0.5">
               {t('pricing.betaOnly.description', 'During the beta, everyone uses the Free plan at no cost. Paid plans shown below are planned and cannot be purchased yet.')}

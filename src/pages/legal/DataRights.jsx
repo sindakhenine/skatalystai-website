@@ -31,7 +31,7 @@ export default function DataRights() {
         },
         {
           heading: 'Contact',
-          body: 'contact@skatalystai.com — or file the request in-app, which is faster and tracked.',
+          body: 'contact@skatalystai.com, or file the request in-app, which is faster and tracked.',
         },
       ]}
     />

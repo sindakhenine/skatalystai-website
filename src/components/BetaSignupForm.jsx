@@ -109,7 +109,7 @@ export default function BetaSignupForm() {
       )}
 
       <p className="mt-3 text-xs text-text-secondary text-left">
-        Join the launch list for the beta opening in October. No spam — just one email when it&rsquo;s ready.
+        Join the launch list for the beta opening in October. No spam, just one email when it&rsquo;s ready.
       </p>
     </form>
   );

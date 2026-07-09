@@ -17,7 +17,7 @@ export default function Contact() {
         },
         {
           heading: 'Email',
-          body: 'contact@skatalystai.com — beta support is best-effort, typically within 2 business days. Security reports: same address, subject "SECURITY".',
+          body: 'contact@skatalystai.com. Beta support is best-effort, typically within 2 business days. Security reports: same address, subject "SECURITY".',
         },
         {
           heading: 'Data rights',
