@@ -41,6 +41,11 @@ import PreviewPage from './pages/PreviewPage';
 import VerifyEmail from './pages/VerifyEmail';
 import WorkspaceSettings from './pages/WorkspaceSettings';
 import ProtectedRoute from './components/ProtectedRoute';
+
+// Landing Admin (/admin/leads) — lazy-loaded so the public landing bundle is
+// unaffected. Deliberately NOT linked from any public navigation; access is
+// enforced by the backend (auth + super-admin + founder allowlist).
+const LandingAdmin = React.lazy(() => import('./pages/admin/LandingAdmin'));
 import OnboardingWizard, { OnboardingBanner } from './components/OnboardingWizard';
 import SessionTimeoutHandler from './components/SessionTimeoutHandler';
 import EmptyState from './components/EmptyState';
@@ -4021,6 +4026,20 @@ function App() {
       <Route
         path="/verify-email"
         element={PUBLIC_LOGIN_ENABLED ? <VerifyEmail /> : <ComingSoon />}
+      />
+
+      {/* Landing Admin (lead management). Hidden from all public navigation;
+          hiding is NOT the security boundary — every /api/landing-admin call
+          is authorized server-side (401 unauthenticated / 403 unauthorized). */}
+      <Route
+        path="/admin/leads/*"
+        element={
+          <ProtectedRoute>
+            <React.Suspense fallback={<div className="min-h-screen bg-light-bg" />}>
+              <LandingAdmin />
+            </React.Suspense>
+          </ProtectedRoute>
+        }
       />
 
       {/* Protected app routes */}

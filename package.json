@@ -15,6 +15,7 @@
     "jszip": "^3.10.1",
     "mermaid": "^11.12.2",
     "mssql": "^12.2.0",
+    "quill": "^2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
