@@ -16,22 +16,25 @@ import { MemoryRouter } from 'react-router-dom';
 
 // --- mocks -------------------------------------------------------------------
 
-jest.mock('quill', () => {
-  return jest.fn().mockImplementation(() => ({
-    on: jest.fn(),
-    getModule: jest.fn(() => ({ addHandler: jest.fn() })),
-    clipboard: { dangerouslyPasteHTML: jest.fn() },
-    history: { clear: jest.fn(), undo: jest.fn(), redo: jest.fn() },
-    getSemanticHTML: jest.fn(() => '<p>body</p>'),
-    getText: jest.fn(() => 'body'),
-    getSelection: jest.fn(() => ({ index: 0 })),
-    getLength: jest.fn(() => 1),
-    insertEmbed: jest.fn(),
-    setSelection: jest.fn(),
-    setContents: jest.fn(),
-    root: { querySelectorAll: jest.fn(() => []) },
-  }));
-});
+// Plain class (NOT jest.fn) so react-scripts' resetMocks:true cannot strip
+// the implementation between tests.
+jest.mock('quill', () => ({
+  __esModule: true,
+  default: class QuillMock {
+    constructor() { this.root = { querySelectorAll: () => [] }; }
+    on() {}
+    getModule() { return { addHandler: () => {} }; }
+    get clipboard() { return { dangerouslyPasteHTML: () => {} }; }
+    get history() { return { clear: () => {}, undo: () => {}, redo: () => {} }; }
+    getSemanticHTML() { return '<p>body</p>'; }
+    getText() { return 'body'; }
+    getSelection() { return { index: 0 }; }
+    getLength() { return 1; }
+    insertEmbed() {}
+    setSelection() {}
+    setContents() {}
+  },
+}));
 jest.mock('quill/dist/quill.snow.css', () => ({}), { virtual: true });
 jest.mock('../../../assets/logo.png', () => 'logo.png', { virtual: true });
 
@@ -137,7 +140,7 @@ test('templates view shows version chips with active/retired states and immutabi
   expect(await screen.findByText('v2')).toBeInTheDocument();
   expect(screen.getByText('v1')).toBeInTheDocument();
   expect(screen.getByText('● active')).toBeInTheDocument();
-  expect(screen.getByText(/Subject: Corrected subject/)).toBeInTheDocument();
+  expect(await screen.findByText(/Subject: Corrected subject/)).toBeInTheDocument();
   expect(screen.getByText('used for sends — immutable')).toBeInTheDocument();
 });
 

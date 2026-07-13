@@ -41,11 +41,6 @@ import PreviewPage from './pages/PreviewPage';
 import VerifyEmail from './pages/VerifyEmail';
 import WorkspaceSettings from './pages/WorkspaceSettings';
 import ProtectedRoute from './components/ProtectedRoute';
-
-// Landing Admin (/admin/leads) — lazy-loaded so the public landing bundle is
-// unaffected. Deliberately NOT linked from any public navigation; access is
-// enforced by the backend (auth + super-admin + founder allowlist).
-const LandingAdmin = React.lazy(() => import('./pages/admin/LandingAdmin'));
 import OnboardingWizard, { OnboardingBanner } from './components/OnboardingWizard';
 import SessionTimeoutHandler from './components/SessionTimeoutHandler';
 import EmptyState from './components/EmptyState';
@@ -64,6 +59,11 @@ import { useAuth } from './contexts/AuthContext';
 import { useTheme } from './contexts/ThemeContext';
 import { useLanguage } from './contexts/LanguageContext';
 import { languages } from './i18n';
+
+// Landing Admin (/admin/leads) — lazy-loaded so the public landing bundle is
+// unaffected. Deliberately NOT linked from any public navigation; access is
+// enforced by the backend (auth + super-admin + founder allowlist).
+const LandingAdmin = React.lazy(() => import('./pages/admin/LandingAdmin'));
 
 // Enable credentials for cross-origin requests (cookies)
 axios.defaults.withCredentials = true;
