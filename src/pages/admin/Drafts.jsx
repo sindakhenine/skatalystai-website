@@ -6,7 +6,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { useAdminApi, fmtDate } from './adminApi';
 import Composer from './Composer';
 
-export default function Drafts() {
+export default function Drafts({ bulkEmailEnabled = false }) {
   const api = useAdminApi();
   const [data, setData] = useState(null);
   const [page, setPage] = useState(1);
@@ -89,6 +89,7 @@ export default function Drafts() {
         <Composer
           draft={openDraft.draft}
           recipients={openDraft.recipients}
+          bulkEmailEnabled={bulkEmailEnabled}
           onClose={() => { setOpenDraft(null); load(); }}
           onSent={() => load()}
         />

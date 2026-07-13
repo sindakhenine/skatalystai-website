@@ -28,6 +28,7 @@ export default function Composer({
   draft = null,               // draft object to load
   templateVersion = null,     // {id, subject, html_body} to start from
   invitation = false,         // send as beta invitation
+  bulkEmailEnabled = false,   // release gate (informational; the SERVER enforces it)
   onClose, onSent,
 }) {
   const api = useAdminApi();
@@ -49,6 +50,7 @@ export default function Composer({
   const sendingRef = useRef(false);
 
   const leadIds = chips.map((c) => c.id);
+  const bulkBlocked = chips.length > 1 && !bulkEmailEnabled;
 
   const say = (kind, text) => setNotice({ kind, text });
 
@@ -113,6 +115,9 @@ export default function Composer({
 
   // ---- send flow: server preview -> explicit confirm -> send -------------------
   async function beginSend() {
+    if (bulkBlocked) {
+      return say('warn', 'Bulk email is disabled until consent capture and a public unsubscribe flow ship. Remove recipients down to one, or complete the release gate (LANDING_ADMIN_BULK_EMAIL_ENABLED).');
+    }
     if (!subject.trim()) return say('err', 'Subject is required.');
     if (!html || !html.replace(/<[^>]+>/g, '').trim()) return say('err', 'The email body is empty.');
     if (leadIds.length === 0) return say('err', 'Add at least one recipient.');
@@ -248,6 +253,12 @@ export default function Composer({
             Sent from SKatalyst AI · replies go to the founder address. A plain-text version is generated automatically.
           </p>
 
+          {bulkBlocked && (
+            <p data-testid="bulk-disabled-banner" className="text-xs rounded-lg px-3 py-2 bg-yellow-50 text-yellow-800" role="status">
+              Bulk email to multiple recipients is currently <strong>disabled</strong> (release gate: consent capture and public unsubscribe are not live yet).
+              The server rejects multi-recipient sends regardless of this notice. You can send to a single lead, or save this as a draft.
+            </p>
+          )}
           {notice && (
             <p role="alert" className={`text-xs rounded-lg px-3 py-2 ${notice.kind === 'ok' ? 'bg-green-50 text-green-700' : notice.kind === 'warn' ? 'bg-yellow-50 text-yellow-800' : 'bg-red-50 text-red-700'}`}>
               {notice.text}
@@ -257,7 +268,8 @@ export default function Composer({
 
         {/* Footer actions */}
         <div className="flex flex-wrap items-center gap-2 px-4 py-3 border-t border-light-border bg-light-soft">
-          <button onClick={beginSend} disabled={!!busy}
+          <button onClick={beginSend} disabled={!!busy || bulkBlocked}
+            title={bulkBlocked ? 'Bulk email is disabled (release gate)' : undefined}
             className="px-5 py-2 text-sm font-medium text-white bg-slate rounded-button hover:bg-slate-hover disabled:opacity-50">
             {busy === 'preview' ? 'Checking…' : 'Send'}
           </button>

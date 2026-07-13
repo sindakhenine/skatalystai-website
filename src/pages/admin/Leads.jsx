@@ -25,7 +25,7 @@ function SubBadge({ sub }) {
   return <span className="ml-1 inline-block px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-50 text-red-700">{sub}</span>;
 }
 
-export default function Leads({ initialLeadId, onLeadClosed }) {
+export default function Leads({ initialLeadId, onLeadClosed, bulkEmailEnabled = false }) {
   const api = useAdminApi();
   const [filters, setFilters] = useState({ search: '', leadStatus: '', subscription: '', emailState: '', invitation: '', conversion: '', createdFrom: '', createdTo: '' });
   const [sort, setSort] = useState({ by: 'created_at', dir: 'desc' });
@@ -135,6 +135,11 @@ export default function Leads({ initialLeadId, onLeadClosed }) {
           <>
             <button onClick={() => setComposer({ recipients: selectedList, invitation: false })} className="px-3 py-1.5 text-xs font-medium text-white bg-slate rounded-button hover:bg-slate-hover">Compose email</button>
             <button onClick={() => setSelected({})} className="px-3 py-1.5 text-xs rounded-button border border-light-border bg-white">Clear selection</button>
+            {selectedList.length > 1 && !bulkEmailEnabled && (
+              <span data-testid="bulk-disabled-hint" className="text-[11px] px-2 py-1 rounded bg-yellow-50 text-yellow-800">
+                Bulk email is currently disabled (release gate) — you can send to one lead at a time.
+              </span>
+            )}
           </>
         )}
         <button onClick={exportCsv} className="ml-auto px-3 py-1.5 text-xs rounded-button border border-light-border bg-white hover:bg-gray-50">Export filtered CSV</button>
@@ -210,6 +215,7 @@ export default function Leads({ initialLeadId, onLeadClosed }) {
         <Composer
           recipients={composer.recipients}
           invitation={composer.invitation}
+          bulkEmailEnabled={bulkEmailEnabled}
           onClose={() => setComposer(null)}
           onSent={() => load()}
         />

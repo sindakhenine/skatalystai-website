@@ -110,9 +110,9 @@ export default function LandingAdmin() {
           </p>
         )}
         {section === 'overview' && <Overview onOpenLead={(id) => { setOpenLeadId(id); navigate('/admin/leads'); }} />}
-        {section === 'leads' && <Leads initialLeadId={openLeadId} onLeadClosed={() => setOpenLeadId(null)} />}
+        {section === 'leads' && <Leads initialLeadId={openLeadId} onLeadClosed={() => setOpenLeadId(null)} bulkEmailEnabled={me.bulkEmailEnabled === true} />}
         {section === 'templates' && <Templates />}
-        {section === 'drafts' && <Drafts />}
+        {section === 'drafts' && <Drafts bulkEmailEnabled={me.bulkEmailEnabled === true} />}
         {section === 'history' && <History />}
       </main>
     </div>
